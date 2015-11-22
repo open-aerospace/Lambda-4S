@@ -6,7 +6,7 @@
     <fileheader>
       <author> Nathan Bergey </author>
       <filecreationdate> 2015-12-01 </filecreationdate>
-      <version> Version 0.1 </version>
+      <version> 0.1 </version>
       <description> Lambda-4S-5 orbital rocket. Succesfully launched in February 1970. </description>
       <note>
         Relying heavily on The Institute of Space and Astronautical Science Reports.
@@ -32,20 +32,105 @@
 
     <mass_balance>
 
+        <!-- Main Rocket. This is actually the Osumi satellite plus the 4th stage motor -->
+        <ixx unit="KG*M2">    0.259  </ixx>
+        <iyy unit="KG*M2">    0.436  </iyy>
+        <izz unit="KG*M2">    0.436  </izz>
+        <ixy unit="KG*M2">    0      </ixy>
+        <ixz unit="KG*M2">    0      </ixz>
+        <iyz unit="KG*M2">    0      </iyz>
+        <emptywt unit="KG">  23.05   </emptywt>
+        <location name="CG" unit="M">
+            <x> 0.557 </x>
+            <y> 0 </y>
+            <z> 0 </z>
+        </location>
+
+        <!-- Other masses will be shed during parts of the flight so they are treated as parts -->
+
         <!-- Nose Cone -->
         <pointmass name="Nose Faring">
             <form shape="tube">
                 <radius unit="M"> 0.504 </radius>
                 <length unit="M"> 1.0   </length>
             </form>
-            <weight unit="KG"> 10 </weight>
+            <weight unit="KG"> 10 </weight> <!-- TODO: guess this number -->
             <location unit="M">
                 <x> 0.5 </x>
                 <y> 0.0 </y>
                 <z> 0.0 </z>
             </location>
-      </pointmass>
+        </pointmass>
 
+        <!-- 3rd Stage -->
+        <pointmass name="3rd Stage">
+            <form shape="tube">
+                <radius unit="M"> 0.504 </radius>
+                <length unit="M"> 2.963 </length>
+            </form>
+            <weight unit="KG"> 394.9 </weight>
+            <location unit="M">
+                <x> 1.940 </x>
+                <y> 0.0 </y>
+                <z> 0.0 </z>
+            </location>
+        </pointmass>
+
+        <!-- 2nd Stage -->
+        <pointmass name="2nd Stage">
+            <form shape="tube">
+                <radius unit="M"> 0.735 </radius>
+                <length unit="M"> 3.963 </length>
+            </form>
+            <weight unit="KG"> 1562.5 </weight>
+            <location unit="M">
+                <x> 6.0 </x>
+                <y> 0.0 </y>
+                <z> 0.0 </z>
+            </location>
+        </pointmass>
+
+        <!-- Left Booster -->
+        <pointmass name="Left Booster">
+            <form shape="tube">
+                <radius unit="M"> 0.310 </radius>
+                <length unit="M"> 5.772 </length>
+            </form>
+            <weight unit="KG"> 381.0 </weight>
+            <location unit="M">
+                <x> 13.4 </x>
+                <y> 0.0 </y>
+                <z> -0.5225 </z>
+            </location>
+        </pointmass>
+
+        <!-- Right Booster -->
+        <pointmass name="Right Booster">
+            <form shape="tube">
+                <radius unit="M"> 0.310 </radius>
+                <length unit="M"> 5.772 </length>
+            </form>
+            <weight unit="KG"> 381.0 </weight>
+            <location unit="M">
+                <x> 13.4 </x>
+                <y> 0.0 </y>
+                <z> 0.5225 </z>
+            </location>
+        </pointmass>
+
+        <!-- 1st Stage -->
+        <pointmass name="1st Stage">
+            <form shape="tube">
+                <radius unit="M"> 0.735 </radius>
+                <length unit="M"> 8.381 </length>
+            </form>
+            <weight unit="KG"> 4507 </weight>
+            <location unit="M">
+                <x> 12.33 </x>
+                <y> 0.0 </y>
+                <z> 0.0 </z>
+            </location>
+        </pointmass>
     </mass_balance>
 
     <ground_reactions /><!-- Not used - hold down model keeps vehicle in place -->
