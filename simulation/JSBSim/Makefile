@@ -1,0 +1,2 @@
+sim:
+	JSBSim run.xml

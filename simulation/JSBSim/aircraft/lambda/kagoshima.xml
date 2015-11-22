@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<initialize name="kagoshima">
+
+  <!-- body -->
+  <ubody     unit="M/SEC">   0.0  </ubody>
+  <vbody     unit="M/SEC">   0.0  </vbody>
+  <wbody     unit="M/SEC">   0.0  </wbody>
+  <phi       unit="DEG">     0.0  </phi>
+  <theta     unit="DEG">    63.0  </theta>
+  <psi       unit="DEG">     0.0  </psi>
+  <altitude  unit="M">       0.0  </altitude>
+
+  <!-- launch site -->
+  <latitude  unit="DEG">    31.2523  </latitude>
+  <longitude unit="DEG">   131.0785  </longitude>
+  <elevation unit="M">     270.0     </elevation>
+  <winddir   unit="DEG">   180.0     </winddir>
+  <vwind     unit="FT/SEC">  1.0     </vwind>
+
+</initialize>

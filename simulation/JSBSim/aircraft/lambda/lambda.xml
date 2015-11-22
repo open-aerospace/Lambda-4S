@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="http://jsbsim.sourceforge.net/JSBSim.xsl"?>
+<fdm_config version="2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://jsbsim.sourceforge.net/JSBSim.xsd"
+    name="Lambda-4S-5" release="ALPHA">
+
+    <fileheader>
+      <author> Nathan Bergey </author>
+      <filecreationdate> 2015-12-01 </filecreationdate>
+      <version> Version 0.1 </version>
+      <description> Lambda-4S-5 orbital rocket. Succesfully launched in February 1970. </description>
+      <note>
+        Relying heavily on The Institute of Space and Astronautical Science Reports.
+      </note>
+    </fileheader>
+
+
+    <!-- Main aerdynamic properties -->
+    <metrics>
+        <wingarea   unit="M2">  0.424 </wingarea>  <!-- Cross sectional area -->
+        <wingspan   unit="M">   0.735 </wingspan>  <!-- Width of body -->
+        <chord      unit="M">  16.522 </chord>     <!-- Reference length -->
+        <htailarea  unit="M2">  0.0   </htailarea>
+        <htailarm   unit="M">   0.0   </htailarm>
+        <vtailarea  unit="M2">  0.0   </vtailarea>
+        <vtailarm   unit="M">   0.0   </vtailarm>
+        <location name="AERORP" unit="M">
+            <x> 11.8 </x>                          <!-- Center of Pressure (M=0) -->
+            <y>  0   </y>
+            <z>  0   </z>
+        </location>
+    </metrics>
+
+    <mass_balance>
+
+        <!-- Nose Cone -->
+        <pointmass name="Nose Faring">
+            <form shape="tube">
+                <radius unit="M"> 0.504 </radius>
+                <length unit="M"> 1.0   </length>
+            </form>
+            <weight unit="KG"> 10 </weight>
+            <location unit="M">
+                <x> 0.5 </x>
+                <y> 0.0 </y>
+                <z> 0.0 </z>
+            </location>
+      </pointmass>
+
+    </mass_balance>
+
+    <ground_reactions /><!-- Not used - hold down model keeps vehicle in place -->
+    <aerodynamics />
+
+    <!-- Output -->
+    <output name="data.csv" type="CSV" rate="100">
+      <property caption="Altitude MSL [m]">     position/h-sl-meters            </property>
+      <property caption="Latitude [deg]">       position/lat-gc-deg             </property>
+      <property caption="Longitdue [deg]">      position/long-gc-deg            </property>
+      <property caption="Thrust [lbf]">         forces/fbx-prop-lbs             </property>
+      <property caption="Total Mass [lbs]">     inertia/weight-lbs              </property>
+      <property caption="Pitch [deg]">          attitude/theta-deg              </property>
+    </output>
+
+</fdm_config>
