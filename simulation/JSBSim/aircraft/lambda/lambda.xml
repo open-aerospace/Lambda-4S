@@ -30,6 +30,10 @@
         </location>
     </metrics>
 
+
+    <!--########################################################################
+    Mass Balance
+    #########################################################################-->
     <mass_balance>
 
         <!-- Main Rocket. This is actually the Osumi satellite plus the 4th stage motor -->
@@ -90,20 +94,6 @@
             </location>
         </pointmass>
 
-        <!-- Left Booster -->
-        <pointmass name="Left Booster">
-            <form shape="tube">
-                <radius unit="M"> 0.310 </radius>
-                <length unit="M"> 5.772 </length>
-            </form>
-            <weight unit="KG"> 381.0 </weight>
-            <location unit="M">
-                <x> 13.4 </x>
-                <y> 0.0 </y>
-                <z> -0.5225 </z>
-            </location>
-        </pointmass>
-
         <!-- Right Booster -->
         <pointmass name="Right Booster">
             <form shape="tube">
@@ -115,6 +105,20 @@
                 <x> 13.4 </x>
                 <y> 0.0 </y>
                 <z> 0.5225 </z>
+            </location>
+        </pointmass>
+
+        <!-- Left Booster -->
+        <pointmass name="Left Booster">
+            <form shape="tube">
+                <radius unit="M"> 0.310 </radius>
+                <length unit="M"> 5.772 </length>
+            </form>
+            <weight unit="KG"> 381.0 </weight>
+            <location unit="M">
+                <x> 13.4 </x>
+                <y> 0.0 </y>
+                <z> -0.5225 </z>
             </location>
         </pointmass>
 
@@ -132,6 +136,77 @@
             </location>
         </pointmass>
     </mass_balance>
+
+
+    <!--########################################################################
+    Propulsion
+    #########################################################################-->
+    <propulsion>
+
+         <!-- [0] Right Booster -->
+         <engine file="lambda-booster">
+           <location unit="M">
+             <x> 16.522  </x>
+             <y>  0      </y>
+             <z>  0.5225 </z>
+           </location>
+           <feed>0</feed>
+           <thruster file="lambda-booster_nozzle">
+             <location unit="M">
+               <x> 16.522 </x>
+               <y> 0      </y>
+               <z> 0.5225 </z>
+             </location>
+           </thruster>
+         </engine>
+         <tank type="FUEL">
+           <location unit="M">
+             <x> 13.4    </x>
+             <y>  0      </y>
+             <z>  0.5225 </z>
+           </location>
+           <radius unit="M">0.310</radius>
+           <grain_config type="CYLINDRICAL">
+             <length unit="M"> 5.772 </length>
+             <bore_diameter unit="M"> 0.2 </bore_diameter>
+           </grain_config>
+           <capacity unit="KG"> 624.0 </capacity>
+           <contents unit="KG"> 624.0 </contents>
+         </tank>
+
+         <!-- [1] Left Booster -->
+         <engine file="lambda-booster">
+           <location unit="M">
+             <x> 16.522  </x>
+             <y>  0      </y>
+             <z>  -0.5225 </z>
+           </location>
+           <feed>0</feed>
+           <thruster file="lambda-booster_nozzle">
+             <location unit="M">
+               <x> 16.522 </x>
+               <y> 0      </y>
+               <z> -0.5225 </z>
+             </location>
+           </thruster>
+         </engine>
+         <tank type="FUEL">
+           <location unit="M">
+             <x> 13.4    </x>
+             <y>  0      </y>
+             <z>  -0.5225 </z>
+           </location>
+           <radius unit="M">0.310</radius>
+           <grain_config type="CYLINDRICAL">
+             <length unit="M"> 5.772 </length>
+             <bore_diameter unit="M"> 0.2 </bore_diameter>
+           </grain_config>
+           <capacity unit="KG"> 624.0 </capacity>
+           <contents unit="KG"> 624.0 </contents>
+         </tank>
+
+    </propulsion>
+
 
     <ground_reactions /><!-- Not used - hold down model keeps vehicle in place -->
     <aerodynamics />
