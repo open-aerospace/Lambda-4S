@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<system name="J246 Guidance Executive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="http://jsbsim.sf.net/JSBSimSystem.xsd">
+
+  <!--
+  #############################################################################
+  GNC Executive MET Clock
+  #############################################################################
+  -->
+  <channel name="MET Clock">
+    <switch name="guidance/executive/launch-time">
+      <default value="simulation/sim-time-sec"/>
+      <test value="guidance/executive/launch-time"> fcs/throttle-cmd-norm[0] gt 0 </test>
+    </switch>
+    <summer name="guidance/executive/MET">
+      <input> simulation/sim-time-sec </input>
+      <input> -guidance/executive/launch-time </input>
+    </summer>
+  </channel>
+
+
+  <!--
+  #############################################################################
+  Mechanical Timer
+  #############################################################################
+  -->
+  <channel name="Mechanical Timer">
+    <switch name="guidance/executive/left-srb-sep-flag">
+      <default value="0"/>
+      <test value="1">
+        guidance/executive/MET gt 8.0
+      </test>
+    </switch>
+    <switch name="guidance/executive/right-srb-sep-flag">
+      <default value="0"/>
+      <test value="1">
+        guidance/executive/MET gt 8.0
+      </test>
+    </switch>
+  </channel>
+
+</system>

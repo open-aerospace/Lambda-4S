@@ -211,8 +211,11 @@
     <ground_reactions /><!-- Not used - hold down model keeps vehicle in place -->
     <aerodynamics />
 
+    <system name="Guidance Executive" file="GuidanceExecutive" />
+
     <!-- Output -->
     <output name="data.csv" type="CSV" rate="100">
+      <property caption="MET [s]">              guidance/executive/MET          </property>
       <property caption="Altitude MSL [m]">     position/h-sl-meters            </property>
       <property caption="Latitude [deg]">       position/lat-gc-deg             </property>
       <property caption="Longitdue [deg]">      position/long-gc-deg            </property>

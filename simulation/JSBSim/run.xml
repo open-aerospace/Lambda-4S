@@ -5,13 +5,21 @@
 
   <use aircraft="lambda" initialize="kagoshima"/>
 
-  <run start="0.0" end="0.1" dt="0.001">
+  <run start="0.0" end="5" dt="0.001">
     <description>
       Lambda-4S-5 Launch
     </description>
 
     <!-- start off on the ground -->
     <property value="1"> forces/hold-down </property>
+
+    <!-- Ignition -->
+    <event name="Start Solid Rocket Boosters">
+        <condition>simulation/sim-time-sec  ge  1.0</condition>
+        <set name="fcs/throttle-cmd-norm[0]" value="1.0"/>
+        <set name="fcs/throttle-cmd-norm[1]" value="1.0"/>
+        <notify/>
+    </event>
 
     <!-- Liftoff -->
     <event name="Release">
