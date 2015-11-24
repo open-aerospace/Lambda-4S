@@ -1,4 +1,4 @@
 <?xml version="1.0"?>
 <nozzle name="Lambda Booster Nozzle">
-  <area unit="M2">  0.25 </area>
+  <area unit="M2"> 0.078 </area> <!-- Assuming area of base of rocket -->
 </nozzle>

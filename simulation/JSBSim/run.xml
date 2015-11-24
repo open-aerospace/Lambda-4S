@@ -5,7 +5,7 @@
 
   <use aircraft="lambda" initialize="kagoshima"/>
 
-  <run start="0.0" end="5" dt="0.001">
+  <run start="0.0" end="20" dt="0.001">
     <description>
       Lambda-4S-5 Launch
     </description>

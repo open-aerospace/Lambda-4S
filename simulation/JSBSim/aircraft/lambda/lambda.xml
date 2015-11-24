@@ -222,6 +222,12 @@
       <property caption="Thrust [lbf]">         forces/fbx-prop-lbs             </property>
       <property caption="Total Mass [lbs]">     inertia/weight-lbs              </property>
       <property caption="Pitch [deg]">          attitude/theta-deg              </property>
+      <property caption="ECEI Velocity (fps)">  velocities/ned-velocity-mag-fps </property>
+      <property caption="ECI Velocity (fps)">   velocities/eci-velocity-mag-fps </property>
+      <property caption="Qbar area">            aero/qbar-area                  </property>
+      <property caption="Accel U (ft/s^2)">     accelerations/udot-ft_sec2      </property>
+      <property caption="Accel V (ft/s^2)">     accelerations/vdot-ft_sec2      </property>
+      <property caption="Accel W (ft/s^2)">     accelerations/wdot-ft_sec2      </property>
     </output>
 
 </fdm_config>
