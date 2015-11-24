@@ -5,7 +5,7 @@
 
   <use aircraft="lambda" initialize="kagoshima"/>
 
-  <run start="0.0" end="20" dt="0.001">
+  <run start="0.0" end="100" dt="0.001">
     <description>
       Lambda-4S-5 Launch
     </description>
@@ -18,6 +18,7 @@
         <condition>simulation/sim-time-sec  ge  1.0</condition>
         <set name="fcs/throttle-cmd-norm[0]" value="1.0"/>
         <set name="fcs/throttle-cmd-norm[1]" value="1.0"/>
+        <set name="fcs/throttle-cmd-norm[2]" value="1.0"/>
         <notify/>
     </event>
 
@@ -25,6 +26,18 @@
     <event name="Release">
       <condition>forces/fbx-prop-lbs gt inertia/weight-lbs</condition>
       <set name="forces/hold-down" value="0"/>
+      <notify/>
+    </event>
+
+
+    <!-- Booster Sep-->
+    <event name="Jettison SRBs">
+      <condition logic="OR">
+        guidance/executive/left-srb-sep-flag eq 1
+        guidance/executive/right-srb-sep-flag eq 1
+      </condition>
+      <set name="inertia/pointmass-weight-lbs[3]" value="0"/>
+      <set name="inertia/pointmass-weight-lbs[4]" value="0"/>
       <notify/>
     </event>
 

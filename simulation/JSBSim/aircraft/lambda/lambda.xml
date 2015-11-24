@@ -181,7 +181,7 @@
              <y>  0      </y>
              <z>  -0.5225 </z>
            </location>
-           <feed>0</feed>
+           <feed>1</feed>
            <thruster file="lambda-booster_nozzle">
              <location unit="M">
                <x> 16.522 </x>
@@ -204,6 +204,39 @@
            <capacity unit="KG"> 624.0 </capacity>
            <contents unit="KG"> 624.0 </contents>
          </tank>
+
+
+          <!-- [2] First Stage -->
+          <engine file="735-full">
+            <location unit="M">
+              <x> 16.522  </x>
+              <y>  0      </y>
+              <z>  0      </z>
+            </location>
+            <feed>2</feed>
+            <thruster file="735-full_nozzle">
+              <location unit="M">
+                <x> 16.522 </x>
+                <y> 0      </y>
+                <z> 0      </z>
+              </location>
+            </thruster>
+          </engine>
+          <tank type="FUEL">
+            <location unit="M">
+              <x> 12      </x>
+              <y>  0      </y>
+              <z>  0      </z>
+            </location>
+            <radius unit="M">0.735</radius>
+            <grain_config type="CYLINDRICAL">
+              <length unit="M"> 8 </length>
+              <bore_diameter unit="M"> 0.4 </bore_diameter>
+            </grain_config>
+            <capacity unit="KG"> 3887.0 </capacity>
+            <contents unit="KG"> 3887.0 </contents>
+          </tank>
+
 
     </propulsion>
 
@@ -228,6 +261,8 @@
       <property caption="Accel U (ft/s^2)">     accelerations/udot-ft_sec2      </property>
       <property caption="Accel V (ft/s^2)">     accelerations/vdot-ft_sec2      </property>
       <property caption="Accel W (ft/s^2)">     accelerations/wdot-ft_sec2      </property>
+            <property caption="main thrust"> propulsion/engine[0]/vacuum-thrust_lbs</property>
+      <property caption="Prop Mass [lbs]">      propulsion/tank[0]/contents-lbs </property>
     </output>
 
 </fdm_config>

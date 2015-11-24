@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rocket_engine name="Lambda-4S Strap On Booster">
-  <isp> 220.0 </isp>
+<rocket_engine name="Lambda-4S First Stage">
+  <isp> 215.0 </isp>
   <builduptime> 0.01 </builduptime>
   <variation>
     <thrust>    0.03 </thrust>
@@ -12,10 +12,11 @@
       Prop Burn    Thrust
       (Wt, lbs)    (lbf)
       =========   ========= -->
-          1.0     60000.0
-        100.0     48000.0
-       1200.0     33000.0
-       1380.0     20000.0
+          0.1    110000.0
+       2000.0     90000.0
+       7500.0     79000.0
+       8000.0     60000.0
+       8600.0      3000.0
     </tableData>
   </thrust_table>
 </rocket_engine>
