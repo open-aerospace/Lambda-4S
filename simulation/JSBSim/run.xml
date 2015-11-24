@@ -31,14 +31,16 @@
 
 
     <!-- Booster Sep-->
-    <event name="Jettison SRBs">
+    <event name="Drop Boosters">
       <condition logic="OR">
         guidance/executive/left-srb-sep-flag eq 1
         guidance/executive/right-srb-sep-flag eq 1
       </condition>
       <set name="inertia/pointmass-weight-lbs[3]" value="0"/>
       <set name="inertia/pointmass-weight-lbs[4]" value="0"/>
-      <notify/>
+      <notify>
+        <property caption="Total Mass [lbs]">     inertia/weight-lbs              </property>
+      </notify>
     </event>
 
   </run>

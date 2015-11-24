@@ -7,7 +7,7 @@
   <wbody     unit="M/SEC">   0.0  </wbody>
   <phi       unit="DEG">     0.0  </phi>
   <theta     unit="DEG">    63.0  </theta>
-  <psi       unit="DEG">     0.0  </psi>
+  <psi       unit="DEG">    90.0  </psi>
   <altitude  unit="M">       0.0  </altitude>
 
   <!-- launch site -->

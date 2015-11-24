@@ -261,8 +261,6 @@
       <property caption="Accel U (ft/s^2)">     accelerations/udot-ft_sec2      </property>
       <property caption="Accel V (ft/s^2)">     accelerations/vdot-ft_sec2      </property>
       <property caption="Accel W (ft/s^2)">     accelerations/wdot-ft_sec2      </property>
-            <property caption="main thrust"> propulsion/engine[0]/vacuum-thrust_lbs</property>
-      <property caption="Prop Mass [lbs]">      propulsion/tank[0]/contents-lbs </property>
     </output>
 
 </fdm_config>
