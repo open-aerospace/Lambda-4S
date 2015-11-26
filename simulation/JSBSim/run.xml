@@ -5,7 +5,7 @@
 
   <use aircraft="lambda" initialize="kagoshima"/>
 
-  <run start="0.0" end="100" dt="0.001">
+  <run start="0.0" end="180" dt="0.001">
     <description>
       Lambda-4S-5 Launch
     </description>
@@ -38,6 +38,37 @@
       </condition>
       <set name="inertia/pointmass-weight-lbs[3]" value="0"/>
       <set name="inertia/pointmass-weight-lbs[4]" value="0"/>
+      <notify>
+        <property caption="Total Mass [lbs]">     inertia/weight-lbs              </property>
+      </notify>
+    </event>
+
+    <!-- 1st Sep-->
+    <event name="First Stage Seperation">
+      <condition>
+        guidance/executive/first-stage-sep-flag eq 1
+      </condition>
+      <set name="inertia/pointmass-weight-lbs[5]" value="0"/>
+      <notify>
+        <property caption="Total Mass [lbs]">     inertia/weight-lbs              </property>
+      </notify>
+    </event>
+
+    <!-- Second Stage Ignition -->
+    <event name="Second Stage Ignition">
+      <condition>
+        guidance/executive/sec-stage-ig-flag eq 1
+      </condition>
+      <set name="fcs/throttle-cmd-norm[3]" value="1.0"/>
+      <notify />
+    </event>
+
+    <!-- 2st Sep-->
+    <event name="Second Stage Seperation">
+      <condition>
+        guidance/executive/sec-stage-sep-flag eq 1
+      </condition>
+      <set name="inertia/pointmass-weight-lbs[2]" value="0"/>
       <notify>
         <property caption="Total Mass [lbs]">     inertia/weight-lbs              </property>
       </notify>

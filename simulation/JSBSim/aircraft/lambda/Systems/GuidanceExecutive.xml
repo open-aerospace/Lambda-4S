@@ -37,6 +37,24 @@
         guidance/executive/MET gt 8.0
       </test>
     </switch>
+    <switch name="guidance/executive/first-stage-sep-flag">
+      <default value="0"/>
+      <test value="1">
+        guidance/executive/MET gt 32.0
+      </test>
+    </switch>
+    <switch name="guidance/executive/sec-stage-ig-flag">
+      <default value="0"/>
+      <test value="1">
+        guidance/executive/MET gt 37.0
+      </test>
+    </switch>
+    <switch name="guidance/executive/sec-stage-sep-flag">
+      <default value="0"/>
+      <test value="1">
+        guidance/executive/MET gt 100.0
+      </test>
+    </switch>
   </channel>
 
 </system>
