@@ -323,6 +323,7 @@
       <property caption="Accel U (ft/s^2)">     accelerations/udot-ft_sec2      </property>
       <property caption="Accel V (ft/s^2)">     accelerations/vdot-ft_sec2      </property>
       <property caption="Accel W (ft/s^2)">     accelerations/wdot-ft_sec2      </property>
+      <property caption="Downrange">            position/distance-from-start-mag-mt </property>
     </output>
 
 </fdm_config>
