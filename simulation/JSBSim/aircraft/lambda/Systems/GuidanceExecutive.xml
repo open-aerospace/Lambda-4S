@@ -55,6 +55,12 @@
         guidance/executive/MET gt 100.0
       </test>
     </switch>
+    <switch name="guidance/executive/third-stage-ig-flag">
+      <default value="0"/>
+      <test value="1">
+        guidance/executive/MET gt 103.0
+      </test>
+    </switch>
   </channel>
 
 </system>

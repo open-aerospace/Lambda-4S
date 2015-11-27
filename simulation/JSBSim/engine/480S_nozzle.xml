@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<nozzle name="Lambda Third Stage Nozzle">
+  <area unit="M2"> 0.01 </area> <!-- Assuming area of base of rocket -->
+</nozzle>

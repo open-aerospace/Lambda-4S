@@ -5,7 +5,7 @@
 
   <use aircraft="lambda" initialize="kagoshima"/>
 
-  <run start="0.0" end="180" dt="0.001">
+  <run start="0.0" end="300" dt="0.001">
     <description>
       Lambda-4S-5 Launch
     </description>
@@ -72,6 +72,15 @@
       <notify>
         <property caption="Total Mass [lbs]">     inertia/weight-lbs              </property>
       </notify>
+    </event>
+
+    <!-- Third Stage Ignition -->
+    <event name="Third Stage Ignition">
+      <condition>
+        guidance/executive/third-stage-ig-flag eq 1
+      </condition>
+      <set name="fcs/throttle-cmd-norm[4]" value="1.0"/>
+      <notify />
     </event>
 
   </run>

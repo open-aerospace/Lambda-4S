@@ -269,6 +269,37 @@
             <contents unit="KG"> 1845.0 </contents>
           </tank>
 
+
+          <!-- [4] Second Stage -->
+          <engine file="480S">
+            <location unit="M">
+              <x>  4.0    </x>
+              <y>  0      </y>
+              <z>  0      </z>
+            </location>
+            <feed>4</feed>
+            <thruster file="480S_nozzle">
+              <location unit="M">
+                <x> 4.0    </x>
+                <y> 0      </y>
+                <z> 0      </z>
+              </location>
+            </thruster>
+          </engine>
+          <tank type="FUEL">
+            <location unit="M">
+              <x>  2.0    </x>
+              <y>  0      </y>
+              <z>  0      </z>
+            </location>
+            <radius unit="M">0.504</radius>
+            <grain_config type="CYLINDRICAL">
+              <length unit="M"> 4 </length>
+              <bore_diameter unit="M"> 0.4 </bore_diameter>
+            </grain_config>
+            <capacity unit="KG"> 547.5 </capacity>
+            <contents unit="KG"> 547.5 </contents>
+          </tank>
     </propulsion>
 
 
