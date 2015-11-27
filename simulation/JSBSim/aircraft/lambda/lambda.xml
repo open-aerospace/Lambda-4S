@@ -16,9 +16,9 @@
 
     <!-- Main aerdynamic properties -->
     <metrics>
-        <wingarea   unit="M2">  0.424 </wingarea>  <!-- Cross sectional area -->
-        <wingspan   unit="M">   0.735 </wingspan>  <!-- Width of body -->
-        <chord      unit="M">  16.522 </chord>     <!-- Reference length -->
+        <wingarea   unit="M2">  1.0 </wingarea>  <!-- Cross sectional area -->
+        <wingspan   unit="M">   1.0 </wingspan>  <!-- Width of body -->
+        <chord      unit="M">   1.0 </chord>
         <htailarea  unit="M2">  0.0   </htailarea>
         <htailarm   unit="M">   0.0   </htailarm>
         <vtailarea  unit="M2">  0.0   </vtailarea>
@@ -72,7 +72,7 @@
                 <radius unit="M"> 0.504 </radius>
                 <length unit="M"> 2.963 </length>
             </form>
-            <weight unit="KG"> 394.9 </weight>
+            <weight unit="KG"> 273.9 </weight>
             <location unit="M">
                 <x> 1.940 </x>
                 <y> 0.0 </y>
@@ -86,7 +86,7 @@
                 <radius unit="M"> 0.735 </radius>
                 <length unit="M"> 3.963 </length>
             </form>
-            <weight unit="KG"> 1562.5 </weight>
+            <weight unit="KG"> 619.4 </weight>
             <location unit="M">
                 <x> 6.0 </x>
                 <y> 0.0 </y>
@@ -100,7 +100,7 @@
                 <radius unit="M"> 0.310 </radius>
                 <length unit="M"> 5.772 </length>
             </form>
-            <weight unit="KG"> 381.0 </weight>
+            <weight unit="KG"> 190.5 </weight>
             <location unit="M">
                 <x> 13.4 </x>
                 <y> 0.0 </y>
@@ -114,7 +114,7 @@
                 <radius unit="M"> 0.310 </radius>
                 <length unit="M"> 5.772 </length>
             </form>
-            <weight unit="KG"> 381.0 </weight>
+            <weight unit="KG"> 190.5 </weight>
             <location unit="M">
                 <x> 13.4 </x>
                 <y> 0.0 </y>
@@ -128,7 +128,7 @@
                 <radius unit="M"> 0.735 </radius>
                 <length unit="M"> 8.381 </length>
             </form>
-            <weight unit="KG"> 4507 </weight>
+            <weight unit="KG"> 1089.4 </weight>
             <location unit="M">
                 <x> 12.33 </x>
                 <y> 0.0 </y>
@@ -143,7 +143,7 @@
     #########################################################################-->
     <propulsion>
 
-         <!-- [0] Right Booster -->
+         <!-- [0] Right Booster #############################################-->
          <engine file="lambda-booster">
            <location unit="M">
              <x> 16.522  </x>
@@ -170,11 +170,12 @@
              <length unit="M"> 5.772 </length>
              <bore_diameter unit="M"> 0.2 </bore_diameter>
            </grain_config>
-           <capacity unit="KG"> 624.0 </capacity>
-           <contents unit="KG"> 624.0 </contents>
+           <capacity unit="KG"> 312.0 </capacity>
+           <contents unit="KG"> 312.0 </contents>
          </tank>
 
-         <!-- [1] Left Booster -->
+
+         <!-- [1] Left Booster ##############################################-->
          <engine file="lambda-booster">
            <location unit="M">
              <x> 16.522  </x>
@@ -201,12 +202,12 @@
              <length unit="M"> 5.772 </length>
              <bore_diameter unit="M"> 0.2 </bore_diameter>
            </grain_config>
-           <capacity unit="KG"> 624.0 </capacity>
-           <contents unit="KG"> 624.0 </contents>
+           <capacity unit="KG"> 312.0 </capacity>
+           <contents unit="KG"> 312.0 </contents>
          </tank>
 
 
-          <!-- [2] First Stage -->
+          <!-- [2] First Stage ##############################################-->
           <engine file="735-full">
             <location unit="M">
               <x> 16.522  </x>
@@ -238,7 +239,7 @@
           </tank>
 
 
-          <!-- [3] Second Stage -->
+          <!-- [3] Second Stage #############################################-->
           <engine file="735-third">
             <location unit="M">
               <x>  8.0    </x>
@@ -270,7 +271,7 @@
           </tank>
 
 
-          <!-- [4] Second Stage -->
+          <!-- [4] Third Stage ##############################################-->
           <engine file="480S">
             <location unit="M">
               <x>  4.0    </x>
@@ -300,12 +301,71 @@
             <capacity unit="KG"> 547.5 </capacity>
             <contents unit="KG"> 547.5 </contents>
           </tank>
+
+          <!-- [5] Kick Stage -->
+          <engine file="Main">
+            <location unit="M">
+              <x>  1.0    </x>
+              <y>  0      </y>
+              <z>  0      </z>
+            </location>
+            <feed>5</feed>
+            <thruster file="Main_nozzle">
+              <location unit="M">
+                <x> 1.0    </x>
+                <y> 0      </y>
+                <z> 0      </z>
+              </location>
+            </thruster>
+          </engine>
+          <tank type="FUEL">
+            <location unit="M">
+              <x>  0.5    </x>
+              <y>  0      </y>
+              <z>  0      </z>
+            </location>
+            <radius unit="M">0.480</radius>
+            <grain_config type="CYLINDRICAL">
+              <length unit="M"> 0.480 </length>
+              <bore_diameter unit="M"> 0.03 </bore_diameter>
+            </grain_config>
+            <capacity unit="KG"> 87.95 </capacity>
+            <contents unit="KG"> 87.95 </contents>
+          </tank>
     </propulsion>
 
+    <!--########################################################################
+    Aero
+    #########################################################################-->
+    <aerodynamics>
+        <axis name="PITCH">
+            <function name="aero/coefficient/Cmalpha">
+                <description>Pitch moment due to alpha</description>
+                <product>
+                    <property>aero/qbar-psf</property>
+                    <property>metrics/Sw-sqft</property>
+                    <property>metrics/bw-ft</property>
+                    <property>aero/alpha-rad</property>
+                    <value>-0.002</value>
+                </product>
+            </function>
+        </axis>
+
+        <axis name="YAW">
+            <function name="aero/coefficient/Cmb">
+                <description>Pitch moment due to alpha</description>
+                <product>
+                    <property>aero/qbar-psf</property>
+                    <property>metrics/Sw-sqft</property>
+                    <property>metrics/bw-ft</property>
+                    <property>aero/beta-rad</property>
+                    <value>-0.002</value>
+                </product>
+            </function>
+        </axis>
+    </aerodynamics>
 
     <ground_reactions /><!-- Not used - hold down model keeps vehicle in place -->
-    <aerodynamics />
-
     <system name="Guidance Executive" file="GuidanceExecutive" />
 
     <!-- Output -->
@@ -323,7 +383,8 @@
       <property caption="Accel U (ft/s^2)">     accelerations/udot-ft_sec2      </property>
       <property caption="Accel V (ft/s^2)">     accelerations/vdot-ft_sec2      </property>
       <property caption="Accel W (ft/s^2)">     accelerations/wdot-ft_sec2      </property>
-      <property caption="Downrange">            position/distance-from-start-mag-mt </property>
+      <property caption="Downrange [m]">        position/distance-from-start-mag-mt </property>
+      <property caption="Angle of Attack [deg]">aero/alpha-deg                  </property>
     </output>
 
 </fdm_config>

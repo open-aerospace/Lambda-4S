@@ -66,6 +66,12 @@ As the rocket flys it should gravity turn and we should see the pitch angle apro
 
 
 
+
+
+
+![png](L-4S-5%20Simulation%20Output_files/L-4S-5%20Simulation%20Output_4_0.png)
+
+
 ### Altitude
 
 The altitude as it flys downrange, roughly to scale:
@@ -73,18 +79,12 @@ The altitude as it flys downrange, roughly to scale:
 
 
 
-![png](L-4S-5%20Simulation%20Output_files/L-4S-5%20Simulation%20Output_5_0.png)
+![png](L-4S-5%20Simulation%20Output_files/L-4S-5%20Simulation%20Output_6_0.png)
 
 
 ## Launch Maps
 
 Various maps of the launch
-
-
-
-
-![png](L-4S-5%20Simulation%20Output_files/L-4S-5%20Simulation%20Output_7_0.png)
-
 
 
 
@@ -96,6 +96,12 @@ Various maps of the launch
 
 
 ![png](L-4S-5%20Simulation%20Output_files/L-4S-5%20Simulation%20Output_9_0.png)
+
+
+
+
+
+![png](L-4S-5%20Simulation%20Output_files/L-4S-5%20Simulation%20Output_10_0.png)
 
 
 
