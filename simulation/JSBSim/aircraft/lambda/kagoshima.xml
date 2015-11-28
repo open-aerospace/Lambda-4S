@@ -7,7 +7,7 @@
   <wbody     unit="M/SEC">   0.0  </wbody>
   <phi       unit="DEG">     0.0  </phi>
   <theta     unit="DEG">    63.0  </theta>
-  <psi       unit="DEG">    90.0  </psi>
+  <psi       unit="DEG">    93.0  </psi>
   <altitude  unit="M">       0.0  </altitude>
 
   <!-- launch site -->
@@ -15,6 +15,6 @@
   <longitude unit="DEG">   131.0785  </longitude>
   <elevation unit="M">     270.0     </elevation>
   <winddir   unit="DEG">   180.0     </winddir>
-  <vwind     unit="FT/SEC">  1.0     </vwind>
+  <vwind     unit="FT/SEC">  0.0     </vwind>
 
 </initialize>

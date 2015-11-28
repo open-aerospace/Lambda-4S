@@ -32,15 +32,24 @@
     <!-- Burnouts -->
     <event name="First Stage Burnout">
       <condition>propulsion/tank[2]/contents-lbs lt 1</condition>
-      <notify/>
+      <notify>
+        <property caption="Altitude [m]">     position/h-sl-meters               </property>
+        <property caption="Downrange [m]">     position/distance-from-start-mag-mt</property>
+      </notify>
     </event>
     <event name="Second Stage Burnout">
       <condition>propulsion/tank[3]/contents-lbs lt 1</condition>
-      <notify/>
+      <notify>
+        <property caption="Altitude [m]">     position/h-sl-meters               </property>
+        <property caption="Downrange [m]">     position/distance-from-start-mag-mt</property>
+      </notify>
     </event>
     <event name="Third Stage Burnout">
       <condition>propulsion/tank[4]/contents-lbs lt 1</condition>
-      <notify/>
+      <notify>
+        <property caption="Altitude [m]">     position/h-sl-meters               </property>
+        <property caption="Downrange [m]">     position/distance-from-start-mag-mt</property>
+      </notify>
     </event>
     <!-- Booster Sep-->
     <event name="Drop Boosters">
@@ -51,6 +60,8 @@
       <set name="inertia/pointmass-weight-lbs[3]" value="0"/>
       <set name="inertia/pointmass-weight-lbs[4]" value="0"/>
       <notify>
+          <property caption="Altitude [m]">     position/h-sl-meters               </property>
+          <property caption="Downrange [m]">     position/distance-from-start-mag-mt</property>
         <property caption="Total Mass [lbs]">     inertia/weight-lbs              </property>
       </notify>
     </event>
@@ -62,6 +73,8 @@
       </condition>
       <set name="inertia/pointmass-weight-lbs[5]" value="0"/>
       <notify>
+          <property caption="Altitude [m]">     position/h-sl-meters               </property>
+          <property caption="Downrange [m]">     position/distance-from-start-mag-mt</property>
         <property caption="Total Mass [lbs]">     inertia/weight-lbs              </property>
       </notify>
     </event>
@@ -72,7 +85,10 @@
         guidance/executive/sec-stage-ig-flag eq 1
       </condition>
       <set name="fcs/throttle-cmd-norm[3]" value="1.0"/>
-      <notify />
+      <notify>
+        <property caption="Altitude [m]">     position/h-sl-meters               </property>
+        <property caption="Downrange [m]">     position/distance-from-start-mag-mt</property>
+      </notify>
     </event>
 
     <!-- 2st Sep-->
@@ -82,6 +98,8 @@
       </condition>
       <set name="inertia/pointmass-weight-lbs[2]" value="0"/>
       <notify>
+          <property caption="Altitude [m]">     position/h-sl-meters               </property>
+          <property caption="Downrange [m]">     position/distance-from-start-mag-mt</property>
         <property caption="Total Mass [lbs]">     inertia/weight-lbs              </property>
       </notify>
     </event>
@@ -92,7 +110,10 @@
         guidance/executive/third-stage-ig-flag eq 1
       </condition>
       <set name="fcs/throttle-cmd-norm[4]" value="1.0"/>
-      <notify />
+      <notify>
+        <property caption="Altitude [m]">     position/h-sl-meters               </property>
+        <property caption="Downrange [m]">     position/distance-from-start-mag-mt</property>
+      </notify>
     </event>
 
   </run>
