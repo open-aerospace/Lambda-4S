@@ -346,7 +346,7 @@
                     <property>metrics/Sw-sqft</property>
                     <property>metrics/bw-ft</property>
                     <property>aero/alpha-rad</property>
-                    <value>-0.002</value>
+                    <value>-0.2</value>
                 </product>
             </function>
             <function name="aero/coefficient/Cmq">
@@ -357,7 +357,7 @@
                     <property>metrics/cbarw-ft</property>
                     <property>aero/ci2vel</property>
                     <property>velocities/q-aero-rad_sec</property>
-                    <value>-18.0000</value>
+                    <value>-20.0000</value>
                 </product>
             </function>
             <function name="aero/coefficient/Cmadot">
@@ -368,10 +368,11 @@
                     <property>metrics/cbarw-ft</property>
                     <property>aero/ci2vel</property>
                     <property>aero/alphadot-rad_sec</property>
-                    <value>-9.0000</value>
+                    <value>-10.0000</value>
                 </product>
             </function>
         </axis>
+
 
         <axis name="YAW">
             <function name="aero/coefficient/Cmb">
@@ -381,9 +382,20 @@
                     <property>metrics/Sw-sqft</property>
                     <property>metrics/bw-ft</property>
                     <property>aero/beta-rad</property>
-                    <value>-0.002</value>
+                    <value>-0.0002</value>
                 </product>
             </function>
+            <function name="aero/coefficient/Cnr">
+                 <description>Yaw_moment_due_to_yaw_rate</description>
+                 <product>
+                     <property>aero/qbar-psf</property>
+                     <property>metrics/Sw-sqft</property>
+                     <property>metrics/bw-ft</property>
+                     <property>aero/bi2vel</property>
+                     <property>velocities/r-aero-rad_sec</property>
+                     <value>-20.00</value>
+                 </product>
+             </function>
         </axis>
     </aerodynamics>
 

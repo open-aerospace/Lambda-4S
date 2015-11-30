@@ -88,6 +88,13 @@ The altitude as it flys downrange, roughly to scale:
 ![png](L-4S-5%20Simulation%20Output_files/L-4S-5%20Simulation%20Output_7_0.png)
 
 
+
+
+
+![png](L-4S-5%20Simulation%20Output_files/L-4S-5%20Simulation%20Output_7_1.png)
+
+
+
 ## Launch Maps
 
 Various maps of the launch
