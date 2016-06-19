@@ -1,0 +1,21 @@
+sudo: false
+language: python
+python:
+  - "3.5"
+before_install:
+  - rvm use 2.2.3 --install --fuzzy
+  - wget -O jsbsim.tar.gz http://jsbsim.cvs.sourceforge.net/viewvc/jsbsim/?view=tar
+  - tar -xvf jsbsim.tar.gz
+install:
+ - cd jsbsim/JSBSim/
+ - ./autogen.sh
+ - ./configure
+ - make
+ - export PATH=$PATH:$PWD/src/
+ - cd ../..
+ - gem install --no-document jekyll
+ - pip install --use-wheel jupyter
+ - pip install --use-wheel numpy
+ - pip install --use-wheel matplotlib
+script:
+ - make deploy
