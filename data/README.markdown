@@ -17,6 +17,9 @@ Here the results of 3 primary cases, representing the nominal range of likely fl
 Rendered to:
 
  - [traj_model_case_1_booster.csv](traj_model_case_1_booster.csv)
+ - [traj_model_case_2_booster.csv](traj_model_case_2_booster.csv)
+ - [traj_model_case_3_booster.csv](traj_model_case_3_booster.csv)
+
 
 Format:
 
