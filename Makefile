@@ -8,7 +8,10 @@ simulation/index.ipynb: sim
 simulation/index.md: simulation/index.ipynb
 	jupyter nbconvert --execute --to=markdown --template="nb-markdown.tpl" $^
 
-_site: simulation/index.md
+data/index.md: data/README.markdown
+	cp data/README.markdown data/index.md
+
+_site: simulation/index.md data/index.md
 	jekyll build
 
 deploy: _site

@@ -1,7 +1,16 @@
+---
+layout: page
+title: Digitized Data From Historical Sources
+---
+
 # Digitized Data From Historical Sources
 
 Most of the primary sources are from the 1960's. They contain some really interesting charts, but not the raw data. [WebPlotDigitizer][webplot] was used to extract approximate values as CSV files.
 
+**Table of Contents:**
+
+ * toc
+{:toc}
 
 
 ## Modeled L-4S-5 Trajectory, 3 Cases: First Stage and Booster
@@ -30,4 +39,23 @@ Format:
     1   | Downrange                            | km
     2   | Altitude                             | km
 
+
+## First Stage and Booster Thrust Curves (L-4S-2)
+
+At the moment I can only find a thrust curve from the earlier L-4S-2. It should be largely identical to vehicle 5.
+
+![Photocopied chart: first stage and booster thrust curve](L-4S-2_first_stage_thrust.png)
+
+> Figure 2-a, "[L4S-2 Flight Plan](../primary sources/ISAS Report 110000196956 -- L4S-2 Flight Plan.pdf)" (pg. 679).
+
+Rendered to:
+
+ - [thrust_booster_and_stage1.csv](thrust_booster_and_stage1.csv)
+
+Format:
+
+ Column |                                Value | Units
+ :----: | -----------------------------------: | :-----
+    1   | Time                                 | s
+    2   | Sea-level Thrust                     | kg
 
