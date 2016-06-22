@@ -51,7 +51,7 @@ At the moment I can only find a thrust curve from the earlier L-4S-2. It should 
 Rendered to:
 
  - [thrust_booster_and_stage1.csv](thrust_booster_and_stage1.csv)
- - [thrust_booster_and_stage2.csv](thrust_booster_and_stage2.csv)
+ - [thrust_stage2.csv](thrust_stage2.csv)
 
 
 Format:
@@ -61,3 +61,5 @@ Format:
     1   | Time                                 | s
     2   | Sea-level Thrust                     | kg
 
+
+[webplot]: http://arohatgi.info/WebPlotDigitizer/app/?
