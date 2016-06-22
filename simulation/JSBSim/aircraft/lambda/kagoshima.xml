@@ -13,7 +13,7 @@
   <!-- launch site -->
   <latitude  unit="DEG">    31.2523  </latitude>
   <longitude unit="DEG">   131.0785  </longitude>
-  <elevation unit="M">     270.0     </elevation>
+  <elevation unit="M">       0.0     </elevation>
   <winddir   unit="DEG">   180.0     </winddir>
   <vwind     unit="FT/SEC">  0.0     </vwind>
 

@@ -238,7 +238,7 @@ patch.linewidth        : 0.1     # edge width in points
 # http://matplotlib.org/api/axes_api.html#module-matplotlib.axes
 #axes.hold           : True    # whether to clear the axes by default on
 #axes.facecolor      : white   # axes background color
-axes.edgecolor      : aaaaaa   # axes edge color
+axes.edgecolor      : eeeeee   # axes edge color
 #axes.linewidth      : 1.0     # edge linewidth
 axes.grid           : True   # display grid or not
 axes.titlesize      : x-large   # fontsize of the axes title
@@ -305,7 +305,7 @@ ytick.color          : 888888      # color of the tick labels
 #grid.color       :   black   # grid color
 #grid.linestyle   :   :       # dotted
 #grid.linewidth   :   0.5     # in points
-grid.alpha       :   0.4     # transparency, between 0.0 and 1.0
+grid.alpha       :   0.3     # transparency, between 0.0 and 1.0
 
 ### Legend
 #legend.fancybox      : False  # if True, use a rounded box for the

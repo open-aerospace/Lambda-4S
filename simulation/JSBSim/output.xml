@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<output name="data.csv" type="CSV" rate="100">
+      <property caption="MET [s]">              guidance/executive/MET          </property>
+      <property caption="Altitude MSL [m]">     position/h-sl-meters            </property>
+      <property caption="Latitude [deg]">       position/lat-gc-deg             </property>
+      <property caption="Longitdue [deg]">      position/long-gc-deg            </property>
+      <property caption="Thrust [lbf]">         forces/fbx-prop-lbs             </property>
+      <property caption="Total Mass [lbs]">     inertia/weight-lbs              </property>
+      <property caption="Pitch [deg]">          attitude/theta-deg              </property>
+      <property caption="ECEI Velocity (fps)">  velocities/ned-velocity-mag-fps </property>
+      <property caption="ECI Velocity (fps)">   velocities/eci-velocity-mag-fps </property>
+      <property caption="qbar (psf)">           /fdm/jsbsim/aero/qbar-psf       </property>
+      <property caption="Accel U (ft/s^2)">     accelerations/udot-ft_sec2      </property>
+      <property caption="Accel V (ft/s^2)">     accelerations/vdot-ft_sec2      </property>
+      <property caption="Accel W (ft/s^2)">     accelerations/wdot-ft_sec2      </property>
+      <property caption="Downrange [m]">        position/distance-from-start-mag-mt </property>
+      <property caption="Angle of Attack [deg]">aero/alpha-deg                  </property>
+      <property caption="Roll Rate [rad/s]">    velocities/p-rad_sec            </property>
+</output>
