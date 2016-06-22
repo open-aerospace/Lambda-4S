@@ -58,4 +58,4 @@ target/
 
 .ipynb_checkpoints
 _site
-
+*.md
