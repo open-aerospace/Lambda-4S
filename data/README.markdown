@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: project-page
 title: Digitized Data From Historical Sources
 description: "Digitized Lambda-4S Data From Historical Sources"
 page: data

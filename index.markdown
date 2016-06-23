@@ -1,5 +1,5 @@
 ---
-layout: project
+layout: project-page
 title: Lambda-4S
 description: The Japanese Lambda-4S is the smallest orbital rocket ever launched.
 page: home
