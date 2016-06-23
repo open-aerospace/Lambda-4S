@@ -1,6 +1,8 @@
 ---
 layout: page
 title: Digitized Data From Historical Sources
+description: "Digitized Lambda-4S Data From Historical Sources"
+page: data
 ---
 
 # Digitized Data From Historical Sources

@@ -1,7 +1,8 @@
 ---
 layout: project
 title: Lambda-4S
-description: Japan's first orbital rocket, the smallest in history.
+description: The Japanese Lambda-4S is the smallest orbital rocket ever launched.
+page: home
 ---
 
 The **Lambda-4S** rocket is currently the smallest (by volume) rocket ever built by humans that has carried a Payload into Earth orbit. Much of it's history is fascinating.

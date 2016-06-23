@@ -1,0 +1,15 @@
+title: Lambda-4S
+subtitle: The Smallest Orbital Rocket
+nav:
+  - title: Lambda-4S Overview
+    url: /Lambda-4S/
+    name: home
+  - title: History
+    url: /Lambda-4S/history/
+    name: history
+  - title: Data
+    url: /Lambda-4S/data/
+    name: data
+  - title: Simulation
+    url: /Lambda-4S/simulation/
+    name: simulation
