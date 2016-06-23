@@ -13,3 +13,13 @@ nav:
   - title: Simulation
     url: /Lambda-4S/simulation/
     name: simulation
+
+subnav:
+    data:
+      - title: Overview
+        url: /Lambda-4S/data/
+        name: data
+      - title: First Stage Thrust Curve
+        url: /Lambda-4S/data/stage1/
+        name: stage1
+
