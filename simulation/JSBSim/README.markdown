@@ -13,16 +13,7 @@ Test to see if it's installed and in your path:
     
       JSBSim Version: 1.0 Aug 14 2015 23:09:57
 
-All of the analysis is in an [IPython Notebook](http://ipython.org/), though the maps and conversion utilties are in other packages. Make sure you have a modern juypiter based IPython
-
-    $ sudo pip install ipython-notebook
-
-And basemap plus data
-
-    $ sudo apt-get install python-mpltoolkits.basemap python-mpltoolkits.basemap-data
-
-
-To run the simulation, the post-procses analysis, and to genorate this document simply run:
+To run the simulation simply run:
 
     $ make
 

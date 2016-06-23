@@ -1,7 +1,10 @@
 all: _site
 
-sim:
+sim: simulation/JSBSim_Lambda-4S.zip
 	cd simulation/JSBSim/; make data.csv
+
+simulation/JSBSim_Lambda-4S.zip:
+	cd simulation/JSBSim/; zip -r ../JSBSim_Lambda-4S.zip .
 
 simulation/index.ipynb: sim
 
