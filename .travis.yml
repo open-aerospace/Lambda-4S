@@ -21,4 +21,5 @@ install:
  - pip install --use-wheel matplotlib
 
 script:
+ - python -m matplotlib.pyplot
  - make deploy
