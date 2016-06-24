@@ -22,3 +22,11 @@ _site: index.markdown simulation/index.md data/index.md history/index.markdown d
 
 deploy: _site
 	./deploy.sh
+
+clean:
+	rm -f simulation/JSBSim/data.csv
+	rm -f simulation/JSBSim/simrun.txt
+	rm -f simulation/JSBSim_Lambda-4S.zip
+	rm -f simulation/index.md
+	rm -f data/index.md
+	rm -f data/stage1/index.md
