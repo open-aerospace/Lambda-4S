@@ -119,5 +119,19 @@ Format:
 
 </div>
 
+**Dynamic Pressure** rendered to:
+
+ - [l-4S-5_mainstages_dpress.csv](l-4S-5_mainstages_dpress.csv)
+
+<div class="column is-6" markdown="1">
+
+Format:
+
+ Column |                                Value | Units
+ :----: | -----------------------------------: | :-----
+    1   | Time                                 | s
+    2   | Dynamic Pressure                     | kg/cm&sup2;
+
+</div>
 
 [webplot]: http://arohatgi.info/WebPlotDigitizer/app/?
