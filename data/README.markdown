@@ -65,4 +65,28 @@ Format:
     2   | Sea-level Thrust                     | kg
 
 
+
+## Modeled L-4S-5 Trajectory, First 3 Stages Key Figures
+
+Cleaned up a bit from the original for easier digitization.
+
+![Photocopied chart: Modeled trajectory from L-4S-5, first 3 stages](L-4S-5_flight_overview.png)
+
+
+> Figure 2-2, "[L-4T-1, L-4S-4, L-4S-5 Specifications and Flight Plan](../primary sources/ISAS Report 110000197264 -- L-4T-1, L-4S-4, L-4S-5 Specifications and Flight Plan.pdf)" (pg. 443).
+
+There are some key numbers highlighted in this chart:
+
+ Figure                                           |   Value | Units
+ ------------------------------------------------ | -------: | :----
+ Maximum Acceleration (Boost off rail)            |   70.3   | m/s/s
+ Maximum Dynamic Pressure (MaxQ)                  |    2.44  | kg/cm&sup2;
+ Maximum Velocity (First Stage)                   |    1.033 | km/s
+ Minimum Acceleration (Drag induced, First Stage) |  -14.4   | m/s/s
+ Maximum Acceleration (Second Stage)              |   79.9   | m/s/s
+ Maximum Velocity (Second Stage)                  |    2.592 | km/s
+ Minimum Acceleration (Second Stage)              |   -4.58  | m/s/s
+ Maximum Acceleration (Third Stage)               |  114.8   | m/s/s
+ Maximum Velocity (Third Stage)                   |    4.621 | km/s
+
 [webplot]: http://arohatgi.info/WebPlotDigitizer/app/?
