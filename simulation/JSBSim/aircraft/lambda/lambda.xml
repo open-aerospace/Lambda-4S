@@ -16,9 +16,9 @@
 
     <!-- Main aerodynamic properties -->
     <metrics>
-        <wingarea   unit="M2">  1.0 </wingarea>  <!-- Cross sectional area -->
-        <wingspan   unit="M">   1.0 </wingspan>  <!-- Width of body -->
-        <chord      unit="M">   1.0 </chord>
+        <wingarea   unit="M2">  0.55  </wingarea>  <!-- Cross sectional area -->
+        <wingspan   unit="M">   0.735 </wingspan>  <!-- Width of body -->
+        <chord      unit="M">   1.0   </chord>
         <htailarea  unit="M2">  0.0   </htailarea>
         <htailarm   unit="M">   0.0   </htailarm>
         <vtailarea  unit="M2">  0.0   </vtailarea>
@@ -338,6 +338,27 @@
     Aero
     #########################################################################-->
     <aerodynamics>
+
+        <axis name="DRAG">
+            <function name="aero/force/drag">
+                <description>Drag_minimum</description>
+                <product>
+                    <property>aero/qbar-psf</property>
+                    <property>metrics/Sw-sqft</property>
+                    <table name="aero/coefficient/CD_min">
+                        <independentVar>velocities/mach</independentVar>
+                        <tableData>
+                            0.010   0.5
+                            0.800   0.55
+                            1.000   0.7
+                            1.5     0.5
+                            2.0     0.4
+                        </tableData>
+                    </table>
+                </product>
+            </function>
+        </axis>
+
         <axis name="PITCH">
             <function name="aero/coefficient/Cmalpha">
                 <description>Pitch moment due to alpha</description>
