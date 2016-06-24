@@ -16,6 +16,10 @@ Most of the primary sources are from the 1960's. They contain some really intere
 {:toc}
 
 
+
+
+
+
 ## Modeled L-4S-5 Trajectory, 3 Cases: First Stage and Booster
 
 The L-4S trajectory was optimized by simulating several cases of launch rail angle and azimuth.
@@ -35,12 +39,19 @@ Rendered to:
  - [traj_model_case_2_stage1.csv](traj_model_case_2_stage1.csv)
  - [traj_model_case_3_stage1.csv](traj_model_case_3_stage1.csv)
 
+<div class="column is-6" markdown="1">
+
 Format:
 
  Column |                                Value | Units
  :----: | -----------------------------------: | :-----
     1   | Downrange                            | km
     2   | Altitude                             | km
+
+</div>
+
+
+
 
 
 ## First Stage and Booster Thrust Curves (L-4S-2)
@@ -57,12 +68,18 @@ Rendered to:
  - [thrust_stage2.csv](thrust_stage2.csv)
 
 
+<div class="column is-6" markdown="1">
+
 Format:
 
  Column |                                Value | Units
  :----: | -----------------------------------: | :-----
     1   | Time                                 | s
     2   | Sea-level Thrust                     | kg
+
+</div>
+
+
 
 
 
