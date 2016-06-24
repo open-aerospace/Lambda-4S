@@ -89,4 +89,35 @@ There are some key numbers highlighted in this chart:
  Maximum Acceleration (Third Stage)               |  114.8   | m/s/s
  Maximum Velocity (Third Stage)                   |    4.621 | km/s
 
+**Acceleration** rendered to:
+
+ - [l-4S-5_mainstages_acceleration.csv](l-4S-5_mainstages_acceleration.csv)
+
+<div class="column is-6" markdown="1">
+
+Format:
+
+ Column |                                Value | Units
+ :----: | -----------------------------------: | :-----
+    1   | Time                                 | s
+    2   | Accelearation                        | m/s/s
+
+</div>
+
+**Velocity** rendered to:
+
+ - [l-4S-5_mainstages_velocity.csv](l-4S-5_mainstages_velocity.csv)
+
+<div class="column is-6" markdown="1">
+
+Format:
+
+ Column |                                Value | Units
+ :----: | -----------------------------------: | :-----
+    1   | Time                                 | s
+    2   | Velocity                             | km/s
+
+</div>
+
+
 [webplot]: http://arohatgi.info/WebPlotDigitizer/app/?
