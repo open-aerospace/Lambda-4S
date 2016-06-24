@@ -134,4 +134,20 @@ Format:
 
 </div>
 
+**Altitude** rendered to:
+
+ - [l-4S-5_mainstages_altitude.csv](l-4S-5_mainstages_altitude.csv)
+
+<div class="column is-6" markdown="1">
+
+Format:
+
+ Column |                                Value | Units
+ :----: | -----------------------------------: | :-----
+    1   | Time                                 | s
+    2   | Altitude                             | km
+
+</div>
+
+
 [webplot]: http://arohatgi.info/WebPlotDigitizer/app/?
