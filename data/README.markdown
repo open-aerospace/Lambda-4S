@@ -54,7 +54,34 @@ Format:
 
 
 
-## First Stage and Booster Thrust Curves (L-4S-2)
+## First Stage Thrust Curve (735-3/3)
+
+The first stage is called a 735 (735 mm diameter) 3/3 (full size) motor. It's an polyurethane + ammonium perchlorate composite motor.
+
+![Photocopied chart: Lambda first stage  thrust curve](735-full-thrust.png)
+
+> Figure 2-1, "[L-Engine Static Fire Tests](../primary sources/ISAS Report 110000196953 -- L-Engine Static Fire Tests.pdf)" (pg. 626).
+
+Rendered to:
+
+ - [735-33-thrustcurve.csv](735-33-thrustcurve.csv)
+
+With units converted to Newtons.
+
+<div class="column is-6" markdown="1">
+
+Format:
+
+ Column |                                Value | Units
+ :----: | -----------------------------------: | :-----
+    1   | Time                                 | s
+    2   | Sea-level Thrust                     | N
+
+</div>
+
+
+
+## First Stage and Booster Thrust Curve (L-4S-2)
 
 At the moment I can only find a thrust curve from the earlier L-4S-2. It should be largely identical to vehicle 5.
 
@@ -65,7 +92,6 @@ At the moment I can only find a thrust curve from the earlier L-4S-2. It should 
 Rendered to:
 
  - [thrust_booster_and_stage1.csv](thrust_booster_and_stage1.csv)
- - [thrust_stage2.csv](thrust_stage2.csv)
 
 
 <div class="column is-6" markdown="1">
