@@ -114,7 +114,7 @@ Format:
 
 The Second stage is a one third scaled first stage (735 1/3) motor. It's an polyurethane + ammonium perchlorate composite motor.
 
-This reference had two thrust curves from different test articles.
+This reference had two thrust curves from different test articles. 735 1/3--2 seems closer to the flight version of the motor, but the burn time is too short. 
 
 ![Photocopied chart: Lambda third stage  thrust curve](735-third-thrust.png)
 
