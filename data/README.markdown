@@ -81,6 +81,7 @@ Format:
 
 
 
+
 ## First Stage and Booster Thrust Curve (L-4S-2)
 
 At the moment I can only find a thrust curve from the earlier L-4S-2. It should be largely identical to vehicle 5.
@@ -105,6 +106,38 @@ Format:
 
 </div>
 
+
+
+
+
+## Second Stage Thrust Curve (735-1/3)
+
+The Second stage is a one third scaled first stage (735 1/3) motor. It's an polyurethane + ammonium perchlorate composite motor.
+
+This reference had two thrust curves from different test articles.
+
+![Photocopied chart: Lambda third stage  thrust curve](735-third-thrust.png)
+
+> Figure 3-2, "[L-Engine Static Fire Tests](../primary sources/ISAS Report 110000196953 -- L-Engine Static Fire Tests.pdf)" (pg. 628).
+
+Rendered to:
+
+ - [735-13_1-thrustcurve.csv](735-13_1-thrustcurve.csv)
+ - [735-13_2-thrustcurve.csv](735-13_2-thrustcurve.csv)
+
+
+With units converted to Newtons.
+
+<div class="column is-6" markdown="1">
+
+Format:
+
+ Column |                                Value | Units
+ :----: | -----------------------------------: | :-----
+    1   | Time                                 | s
+    2   | Sea-level Thrust                     | N
+
+</div>
 
 
 
