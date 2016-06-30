@@ -17,7 +17,7 @@ data/index.md: data/README.markdown
 data/stage1/index.md: data/stage1/index.ipynb
 	jupyter nbconvert --execute --to=markdown --template="nb-markdown.tpl" $^
 
-_site: index.markdown simulation/index.md data/index.md history/index.markdown data/stage1/index.md
+_site: index.markdown simulation/index.md data/index.md history/index.markdown data/stage1/index.md _bibliography/references.bib
 	jekyll build
 
 deploy: _site

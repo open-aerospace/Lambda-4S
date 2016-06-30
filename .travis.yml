@@ -16,6 +16,7 @@ install:
  - export PATH=$PATH:$PWD/src/
  - cd ../..
  - gem install --no-document jekyll
+ - gem install jekyll-scholar
  - pip install --use-wheel jupyter
  - pip install --use-wheel numpy
  - pip install --use-wheel matplotlib
