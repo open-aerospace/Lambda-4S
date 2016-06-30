@@ -2,7 +2,8 @@ sudo: false
 language: python
 python:
   - "3.5"
-
+env:
+  - JEKYLL_ENV=production
 before_install:
   - rvm use 2.2.3 --install --fuzzy
   - wget -O jsbsim.tar.gz http://jsbsim.cvs.sourceforge.net/viewvc/jsbsim/?view=tar
