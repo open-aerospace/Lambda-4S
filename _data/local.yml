@@ -15,6 +15,26 @@ nav:
     name: simulation
 
 subnav:
+    home:
+      - title: Overview
+        url: /Lambda-4S/
+        name: overview
+      - title: First Stage
+        url: /Lambda-4S/overview/stage1/
+        name: stage1
+      - title: Second Stage
+        url: /Lambda-4S/overview/stage2/
+        name: stage2
+      - title: Third Stage
+        url: /Lambda-4S/overview/stage3/
+        name: stage3
+      - title: Guidance and Electronics
+        url: /Lambda-4S/overview/gnc/
+        name: gnc
+      - title: Fourth Stage and Payload
+        url: /Lambda-4S/overview/payload/
+        name: payload
+
     data:
       - title: Overview
         url: /Lambda-4S/data/
