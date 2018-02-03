@@ -6,12 +6,11 @@ env:
   - JEKYLL_ENV=production
 before_install:
   - rvm use 2.3.3 --install --fuzzy
-  - tar -xvf JSBSim-1.0.rc2.tar.gz
+  - tar -xvf jsbsim-code.tar.gz
 
 install:
- - cd JSBSim-1.0
+ - cd jsbsim-code
  - ./autogen.sh
- - ./configure
  - make
  - export PATH=$PATH:$PWD/src/
  - cd ..
