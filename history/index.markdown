@@ -9,7 +9,7 @@ page: history
 History Of The Lambda-4S Rocket
 ================================================================================
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The **Lambda-4S Rocket** (L-4Sロケット) was an experimental Japanese orbital launch vehicle. It is to-date the smallest orbital rocket successfully launched. On February 11<sup>th</sup>, 1970 it carried a small test satellite consisting of a radio and temperature sensor to an imprecise elliptical Earth orbit making Japan just the fourth nation to launch a satellite (after the USSR, USA, and France, and narrowly beating China by a couple months). Its history begins with one person, Hideo Itokawa, a charismatic engineer who started what would become the Japanese space program at the University of Tokyo.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The **Lambda-4S Rocket** (L-4Sロケット) was an experimental Japanese orbital launch vehicle. On February 11<sup>th</sup>, 1970 it carried a small test satellite consisting of a radio and temperature sensor to an imprecise elliptical Earth orbit making Japan just the fourth nation to launch a satellite (after the USSR, USA, and France, and narrowly beating China by a couple months). Its history begins with one person, Hideo Itokawa, a charismatic engineer who started what would become the Japanese space program at the University of Tokyo.
 
 
 

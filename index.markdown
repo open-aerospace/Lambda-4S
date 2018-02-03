@@ -6,7 +6,7 @@ page: home
 subpage: overview
 ---
 
-The **Lambda-4S** rocket is currently the smallest (by volume) rocket ever built by humans that has carried a payload into Earth orbit. Much of its history is fascinating.
+The **Lambda-4S** rocket is a very small orbital launch vehicle from the mid-1900s. Much of its history is fascinating.
 
 
 [![L-4s overview drawing](mechanical/L-4S_overview.svg)](mechanical/L-4S_overview.svg)
