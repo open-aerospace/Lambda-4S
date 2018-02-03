@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8">
+  <title>Lambda-4S Guidance and Electronics</title>
+  <meta name="description" content="The Japanese Lambda-4S is the smallest orbital rocket ever launched.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="Lambda-4S Guidance and Electronics">
+  <meta property="og:description" content="The Japanese Lambda-4S is the smallest orbital rocket ever launched.">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:type" content="website">
+
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/assets/style.css">
+
+  <link rel="apple-touch-icon" sizes="57x57" href="/assets/img/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/assets/img/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/assets/img/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/assets/img/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/assets/img/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/assets/img/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/assets/img/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/assets/img/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="/assets/img/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/assets/img/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="/assets/img/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/assets/img/favicon-16x16.png" sizes="16x16">
+  <link rel="shortcut icon" href="favicon.ico">
+  <meta name="msapplication-TileColor" content="#6677cc">
+  <meta name="msapplication-TileImage" content="/assets/img/mstile-144x144.png">
+  <meta name="theme-color" content="#6677cc">
+
+  
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-74838907-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+  
+
+  <script src="/assets/js/vendor/jquery-2.2.2.min.js"></script>
+ </head>
+ <body>
+
+  <section class="hero is-primary is-bold">
+    <header class="hero-head">
+ <div class="container">
+  <nav class="nav">
+
+   <div class="nav-left">
+    <a class="nav-item" href="/">
+     <img src="/assets/img/title.png" alt="open-aerospace">
+    </a>
+   </div>
+
+   <div id="nav-menu" class="nav-right nav-menu">
+    <span class="nav-item">
+     <a  href="/">Home</a>
+    </span>
+    <span class="nav-item">
+     <a  href="/about/">About</a>
+    </span>
+    <span class="nav-item">
+     <a class="button is-outlined" href="https://github.com/open-aerospace">
+      <i class="fa fa-github"></i>
+      GitHub
+     </a>
+    </span>
+   </div>
+  </nav>
+ </div>
+</header>
+
+    <div class="hero-body">
+ <div class="container">
+  <p class="title">
+   Lambda-4S
+  </p>
+  <p class="subtitle">
+   The Smallest Orbital Rocket
+
+  </p>
+ </div>
+</div>
+
+<div class="hero-foot">
+ <div class="container">
+  <nav class="tabs is-boxed">
+   <ul>
+    
+     <li class="is-active"><a href="/Lambda-4S/">Lambda-4S Overview</a></li>
+    
+     <li class=""><a href="/Lambda-4S/history/">History</a></li>
+    
+     <li class=""><a href="/Lambda-4S/data/">Digitized Data</a></li>
+    
+     <li class=""><a href="/Lambda-4S/simulation/">Simulation</a></li>
+    
+   </ul>
+  </nav>
+ </div>
+</div>
+
+  </section>
+
+
+  <nav class="nav has-shadow">
+  <div class="container">
+    <div class="nav-left">
+    
+      
+        
+          <a class="nav-item is-tab " href="/Lambda-4S/">Overview</a>
+        
+          <a class="nav-item is-tab " href="/Lambda-4S/overview/stage1/">First Stage</a>
+        
+          <a class="nav-item is-tab " href="/Lambda-4S/overview/stage2/">Second Stage</a>
+        
+          <a class="nav-item is-tab " href="/Lambda-4S/overview/stage3/">Third Stage</a>
+        
+          <a class="nav-item is-tab is-active" href="/Lambda-4S/overview/gnc/">Guidance and Electronics</a>
+        
+          <a class="nav-item is-tab " href="/Lambda-4S/overview/payload/">Fourth Stage and Payload</a>
+        
+      
+    
+      
+    
+    </div>
+  </div>
+</nav>
+
+<section class="section">
+ <div class="container">
+  <div class="content">
+
+    <h1 id="guidance-and-electronics">Guidance and Electronics</h1>
+
+<p>Just below the 4th stage sat a large terminal guidance system. This included a set of de-spin and re-spin motors, a hydrogen peroxide reaction control system, gyroscopes and electronics.</p>
+
+<p><strong>Table of Contents:</strong></p>
+
+<ul id="markdown-toc">
+  <li><a href="#lambda-4s-trajectory" id="markdown-toc-lambda-4s-trajectory">Lambda 4S Trajectory</a>    <ul>
+      <li><a href="#lambda-4s-5-ascent" id="markdown-toc-lambda-4s-5-ascent">Lambda 4S-5 Ascent</a></li>
+    </ul>
+  </li>
+  <li><a href="#guidance-system-timeline" id="markdown-toc-guidance-system-timeline">Guidance System Timeline</a>    <ul>
+      <li><a href="#lambda-4s-5-timetable" id="markdown-toc-lambda-4s-5-timetable">Lambda 4S-5 Timetable</a></li>
+    </ul>
+  </li>
+  <li><a href="#the-attitude-control-system" id="markdown-toc-the-attitude-control-system">The Attitude Control System</a></li>
+  <li><a href="#rcs-electronics" id="markdown-toc-rcs-electronics">RCS Electronics</a></li>
+  <li><a href="#assembled-system" id="markdown-toc-assembled-system">Assembled System</a></li>
+</ul>
+
+<h2 id="lambda-4s-trajectory">Lambda 4S Trajectory</h2>
+
+<p><strong>Orbit</strong> is having enough speed circling around the Earth to balance gravity. Getting such huge tangential velocities from a rocket launched from the ground involves  going not just up, but sideways (downrange) at very high velocity. All launch vehicles need to somehow steer themselves from “up” to horizontal.</p>
+
+<p>Lambda 4S was a very simple vehicle with only minimal guidance. Rather than smooth, continuously controlled flight, Lambda was flown unguided until the very last stage. This is basically the “Go up and turn right” method of orbital flight.</p>
+
+<p>The first stage had large aerodynamic fins and flew entirely in the atmosphere. This kept the vehicle travelling with an angle of attack close to zero. In other words it flew like an arrow, with the fins keeping it headed in the direction it was travelling. As the rocket made it further up and further out downrange the angle relative to the horizon decreased as it gained speed (gravity turn).</p>
+
+<p>Once out of the atmosphere there are no outside forces acting on the rocket to keep it straight. Another method must be used to control the attitude, in this case <a href="https://en.wikipedia.org/wiki/Spin-stabilisation">spin, or “gyroscopic” stabilization</a>. Before the second stage fired it was spun up to about 850°/s. This kept the upper stages pointed in the same direction for the duration of the flight. The problem is that this fixed attitude isn’t the right angle to enter orbit! So they had to find a way to pitch the 4th stage down for the final burn.</p>
+
+<h3 id="lambda-4s-5-ascent">Lambda 4S-5 Ascent</h3>
+
+<p><a href="../../translations/ascent_timeline.svg"><img src="../ascent_timeline.png" alt="Ascent profile and timeline" /></a></p>
+
+<p>After 3rd stage burnout a pair of pre-prepared solid fuel de-spin motors fired to bring the spin rate down as much as possible. Once the spin rate went below a certain threshold an analog computer and reaction control system (RCS) was used to null out the spin rate and point the vehicle down to the proper pitch angle. It also tried to restrain the Yaw angle to as close to 0 as possible (nulling out any residual errors from the 3rd stage burn).</p>
+
+<p>Once the 4th stage was pointed in the right direction it was re-spun back up to a stable spin rate and the guidance section was ditched.</p>
+
+<p>This was all monitored from the ground via radar and telemetry. If the pointing operation went well, the optimal ignition point was calculated and radioed up to the vehicle and an all clear was given to fly the final stage into orbit.</p>
+
+<h2 id="guidance-system-timeline">Guidance System Timeline</h2>
+
+<p>At the end of the 3rd stage burn we’re left with a 4th stage and guidance section spinning at a high rate and pointed the incorrect direction.</p>
+
+<p>The main flight timer is programmed to fire a pair of de-spin rockets to slow down the roll rate to something manageable and an active system turns on just long enough to set the vehicle into the correct orientation. It then spins back up to stabilize the final stage and ready it for flight. The actual final stage burn is delayed until the ground tracking has verified the trajectory and computed the optimal time of ignition.</p>
+
+<h3 id="lambda-4s-5-timetable">Lambda 4S-5 Timetable</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Time Since Liftoff [s]</th>
+      <th>Action</th>
+      <th>Trigger</th>
+      <th>Note</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">T+130</td>
+      <td>3rd stage burnout</td>
+      <td> </td>
+      <td>Predicted time, could vary in flight</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">T+148</td>
+      <td>Retro-motor ignition</td>
+      <td>Timer</td>
+      <td>To avoid stage collision</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">T+150</td>
+      <td>3rd stage separation</td>
+      <td>Timer</td>
+      <td>Separation pyros fired by timer</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">T+160</td>
+      <td>De-spin motor ignintion</td>
+      <td>Timer</td>
+      <td>Fixed, solid fuel de-spin motors</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">T+161</td>
+      <td>RCS system start</td>
+      <td>Spin-rate sensor</td>
+      <td>Once the spin rate went below 30°/s the control system was enabled</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">T+232</td>
+      <td>RCS system mode change</td>
+      <td>Timer</td>
+      <td>After settling the attitude the system started to re-increase the roll rate</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">T+262</td>
+      <td>Re-spin motor ignition</td>
+      <td>Timer</td>
+      <td>Bring 4th stage spin rate to stable speed</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">T+475</td>
+      <td>Separation pin removed</td>
+      <td>Timer</td>
+      <td>Arm 4th stage (prevent early firing)</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">T+476</td>
+      <td>4th stage separation</td>
+      <td> </td>
+      <td>Control system ditched</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">T+477</td>
+      <td>4th stage ignition</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left">T+508.5</td>
+      <td>4th stage burnout</td>
+      <td> </td>
+      <td>In orbit!</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="the-attitude-control-system">The Attitude Control System</h2>
+
+<p>The attitude control system consisted of a 2 degree-of-freedom stable platform gyroscope mounted on a spin table. While the stable platform was much like any other stable platform inertial system, it only accounted for pitch and yaw. Since the vehicle would be spinning at a high rate during parts of the flight, the roll-axis of the platform was designed differently.</p>
+
+<p>Output from the fixed platform and additional rate-senors were fed into an analog controller that output a signal for electrically driven valves controlling the maneuvering jets (RCS). When turned on the system then tried to zero out the error signals from the roll axis and strapdown table, thus pointing the rocket in the correct direction.</p>
+
+<p>The RCS was a hydrogen peroxide (H₂O₂) monopropellent pressurized with nitrogen. H₂O₂ was individually cut off from each rocket nozzle (two for pitch, two for yaw, 4 for roll) by solenoid valves controlled by the system electronics. The nozzles used a catalyst in their chambers to rapidly decompose the hydogen peroxide into hot gas. Each nozzle produced about 3 Newtons of thrust.</p>
+
+<p><img src="../gnc_RCS_block.png" alt="Block diagram of the Lambda 4S attitude control system" /></p>
+
+<p>The correct attitude (orbital insertion angle) was computed on the ground based on simulations of the flight. The stable gyro platform was then set to that computed attitude before launch. This is how the control system was “programmed”.</p>
+
+<h2 id="rcs-electronics">RCS Electronics</h2>
+
+<p><img src="../gnc_RCS_electrical.png" alt="Diagram of control electronics" /></p>
+
+<p>Photo of a mockup of the RCS electrical system in a museum:</p>
+
+<p><img src="../gnc_RCS_electrical_system.jpg" alt="Photo of electrical system assembled" /></p>
+
+<h2 id="assembled-system">Assembled System</h2>
+
+<p>The final control section included fuel tanks, thrusters, electronics, the gyroscope and telemetry radios and antennas.</p>
+
+<p><img src="../gnc_RCS_assembly.png" alt="Diagram of assembled control section" /></p>
+
+
+
+  </div>
+ </div>
+</section>
+
+
+  <footer class="footer">
+   <div class="container">
+    <div class="is-text-centered">
+     <p>
+      <strong>Open Aerospace</strong> is a collaborative effort. Most work is copyleft licensed e.g. GPL. This website content is licensed <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>.
+     </p>
+     <p>
+      Please comment, update, fix, or complain about this site using github's issues and pull requests.
+     </p>
+     <p><a href="https://github.com/open-aerospace/open-aerospace.github.io">github.com/open-aerospace/open-aerospace.github.io</a></p>
+    </div>
+   </div>
+  </footer>
+
+ </body>
+</html>

@@ -1,0 +1,426 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="http://jsbsim.sourceforge.net/JSBSim.xsl"?>
+<fdm_config version="2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://jsbsim.sourceforge.net/JSBSim.xsd"
+    name="Lambda-4S-5" release="ALPHA">
+
+    <fileheader>
+      <author> Nathan Bergey </author>
+      <filecreationdate> 2015-12-01 </filecreationdate>
+      <version> 0.2 </version>
+      <description> Lambda-4S-5 orbital rocket. Succesfully launched in February 1970. </description>
+      <note>
+        Relying heavily on The Institute of Space and Astronautical Science Reports.
+      </note>
+    </fileheader>
+
+
+    <!-- Main aerodynamic properties -->
+    <metrics>
+        <wingarea   unit="M2">  0.55  </wingarea>  <!-- Cross sectional area -->
+        <wingspan   unit="M">   0.735 </wingspan>  <!-- Width of body -->
+        <chord      unit="M">   1.0   </chord>
+        <htailarea  unit="M2">  0.0   </htailarea>
+        <htailarm   unit="M">   0.0   </htailarm>
+        <vtailarea  unit="M2">  0.0   </vtailarea>
+        <vtailarm   unit="M">   0.0   </vtailarm>
+        <location name="AERORP" unit="M">
+            <x> 11.8 </x>                          <!-- Center of Pressure (M=0) -->
+            <y>  0   </y>
+            <z>  0   </z>
+        </location>
+    </metrics>
+
+
+    <!--########################################################################
+    Mass Balance
+    #########################################################################-->
+    <mass_balance>
+
+        <!-- Main Rocket. This is actually the Osumi satellite plus the 4th stage motor -->
+        <ixx unit="KG*M2">    0.259  </ixx>
+        <iyy unit="KG*M2">    0.436  </iyy>
+        <izz unit="KG*M2">    0.436  </izz>
+        <ixy unit="KG*M2">    0      </ixy>
+        <ixz unit="KG*M2">    0      </ixz>
+        <iyz unit="KG*M2">    0      </iyz>
+        <emptywt unit="KG">  23.05   </emptywt>
+        <location name="CG" unit="M">
+            <x> 0.557 </x>
+            <y> 0 </y>
+            <z> 0 </z>
+        </location>
+
+        <!-- Other masses will be shed during parts of the flight so they are treated as parts -->
+
+        <!-- Nose Cone -->
+        <pointmass name="Nose Faring">
+            <form shape="tube">
+                <radius unit="M"> 0.504 </radius>
+                <length unit="M"> 1.0   </length>
+            </form>
+            <weight unit="KG"> 10 </weight> <!-- TODO: guess this number -->
+            <location unit="M">
+                <x> 0.5 </x>
+                <y> 0.0 </y>
+                <z> 0.0 </z>
+            </location>
+        </pointmass>
+
+        <!-- 3rd Stage -->
+        <pointmass name="3rd Stage">
+            <form shape="tube">
+                <radius unit="M"> 0.504 </radius>
+                <length unit="M"> 2.963 </length>
+            </form>
+            <weight unit="KG"> 273.9 </weight>
+            <location unit="M">
+                <x> 1.940 </x>
+                <y> 0.0 </y>
+                <z> 0.0 </z>
+            </location>
+        </pointmass>
+
+        <!-- 2nd Stage -->
+        <pointmass name="2nd Stage">
+            <form shape="tube">
+                <radius unit="M"> 0.735 </radius>
+                <length unit="M"> 3.963 </length>
+            </form>
+            <weight unit="KG"> 619.4 </weight>
+            <location unit="M">
+                <x> 6.0 </x>
+                <y> 0.0 </y>
+                <z> 0.0 </z>
+            </location>
+        </pointmass>
+
+        <!-- Right Booster -->
+        <pointmass name="Right Booster">
+            <form shape="tube">
+                <radius unit="M"> 0.310 </radius>
+                <length unit="M"> 5.772 </length>
+            </form>
+            <weight unit="KG"> 190.5 </weight>
+            <location unit="M">
+                <x> 13.4 </x>
+                <y> 0.0 </y>
+                <z> 0.5225 </z>
+            </location>
+        </pointmass>
+
+        <!-- Left Booster -->
+        <pointmass name="Left Booster">
+            <form shape="tube">
+                <radius unit="M"> 0.310 </radius>
+                <length unit="M"> 5.772 </length>
+            </form>
+            <weight unit="KG"> 190.5 </weight>
+            <location unit="M">
+                <x> 13.4 </x>
+                <y> 0.0 </y>
+                <z> -0.5225 </z>
+            </location>
+        </pointmass>
+
+        <!-- 1st Stage -->
+        <pointmass name="1st Stage">
+            <form shape="tube">
+                <radius unit="M"> 0.735 </radius>
+                <length unit="M"> 8.381 </length>
+            </form>
+            <weight unit="KG"> 1089.4 </weight>
+            <location unit="M">
+                <x> 12.33 </x>
+                <y> 0.0 </y>
+                <z> 0.0 </z>
+            </location>
+        </pointmass>
+    </mass_balance>
+
+
+    <!--########################################################################
+    Propulsion
+    #########################################################################-->
+    <propulsion>
+
+         <!-- [0] Right Booster #############################################-->
+         <engine file="lambda-booster">
+           <location unit="M">
+             <x> 16.522  </x>
+             <y>  0      </y>
+             <z>  0.5225 </z>
+           </location>
+           <feed>0</feed>
+           <thruster file="lambda-booster_nozzle">
+             <location unit="M">
+               <x> 16.522 </x>
+               <y> 0      </y>
+               <z> 0.5225 </z>
+             </location>
+           </thruster>
+         </engine>
+         <tank type="FUEL">
+           <location unit="M">
+             <x> 13.4    </x>
+             <y>  0      </y>
+             <z>  0.5225 </z>
+           </location>
+           <radius unit="M">0.310</radius>
+           <grain_config type="CYLINDRICAL">
+             <length unit="M"> 5.772 </length>
+             <bore_diameter unit="M"> 0.2 </bore_diameter>
+           </grain_config>
+           <capacity unit="KG"> 312.0 </capacity>
+           <contents unit="KG"> 312.0 </contents>
+         </tank>
+
+
+         <!-- [1] Left Booster ##############################################-->
+         <engine file="lambda-booster">
+           <location unit="M">
+             <x> 16.522  </x>
+             <y>  0      </y>
+             <z>  -0.5225 </z>
+           </location>
+           <feed>1</feed>
+           <thruster file="lambda-booster_nozzle">
+             <location unit="M">
+               <x> 16.522 </x>
+               <y> 0      </y>
+               <z> -0.5225 </z>
+             </location>
+           </thruster>
+         </engine>
+         <tank type="FUEL">
+           <location unit="M">
+             <x> 13.4    </x>
+             <y>  0      </y>
+             <z>  -0.5225 </z>
+           </location>
+           <radius unit="M">0.310</radius>
+           <grain_config type="CYLINDRICAL">
+             <length unit="M"> 5.772 </length>
+             <bore_diameter unit="M"> 0.2 </bore_diameter>
+           </grain_config>
+           <capacity unit="KG"> 312.0 </capacity>
+           <contents unit="KG"> 312.0 </contents>
+         </tank>
+
+
+          <!-- [2] First Stage ##############################################-->
+          <engine file="735-full">
+            <location unit="M">
+              <x> 16.522  </x>
+              <y>  0      </y>
+              <z>  0      </z>
+            </location>
+            <feed>2</feed>
+            <thruster file="735-full_nozzle">
+              <location unit="M">
+                <x> 16.522 </x>
+                <y> 0      </y>
+                <z> 0      </z>
+              </location>
+            </thruster>
+          </engine>
+          <tank type="FUEL">
+            <location unit="M">
+              <x> 12      </x>
+              <y>  0      </y>
+              <z>  0      </z>
+            </location>
+            <radius unit="M">0.735</radius>
+            <grain_config type="CYLINDRICAL">
+              <length unit="M"> 8 </length>
+              <bore_diameter unit="M"> 0.4 </bore_diameter>
+            </grain_config>
+            <capacity unit="KG"> 3887.0 </capacity>
+            <contents unit="KG"> 3887.0 </contents>
+          </tank>
+
+
+          <!-- [3] Second Stage #############################################-->
+          <engine file="735-third">
+            <location unit="M">
+              <x>  8.0    </x>
+              <y>  0      </y>
+              <z>  0      </z>
+            </location>
+            <feed>3</feed>
+            <thruster file="735-third_nozzle">
+              <location unit="M">
+                <x> 8.0    </x>
+                <y> 0      </y>
+                <z> 0      </z>
+              </location>
+            </thruster>
+          </engine>
+          <tank type="FUEL">
+            <location unit="M">
+              <x>  5.0    </x>
+              <y>  0      </y>
+              <z>  0      </z>
+            </location>
+            <radius unit="M">0.735</radius>
+            <grain_config type="CYLINDRICAL">
+              <length unit="M"> 4 </length>
+              <bore_diameter unit="M"> 0.4 </bore_diameter>
+            </grain_config>
+            <capacity unit="KG"> 1845.0 </capacity>
+            <contents unit="KG"> 1845.0 </contents>
+          </tank>
+
+
+          <!-- [4] Third Stage ##############################################-->
+          <engine file="480S">
+            <location unit="M">
+              <x>  4.0    </x>
+              <y>  0      </y>
+              <z>  0      </z>
+            </location>
+            <feed>4</feed>
+            <thruster file="480S_nozzle">
+              <location unit="M">
+                <x> 4.0    </x>
+                <y> 0      </y>
+                <z> 0      </z>
+              </location>
+            </thruster>
+          </engine>
+          <tank type="FUEL">
+            <location unit="M">
+              <x>  2.0    </x>
+              <y>  0      </y>
+              <z>  0      </z>
+            </location>
+            <radius unit="M">0.504</radius>
+            <grain_config type="CYLINDRICAL">
+              <length unit="M"> 4 </length>
+              <bore_diameter unit="M"> 0.4 </bore_diameter>
+            </grain_config>
+            <capacity unit="KG"> 547.5 </capacity>
+            <contents unit="KG"> 547.5 </contents>
+          </tank>
+
+          <!-- [5] Kick Stage -->
+          <engine file="Main">
+            <location unit="M">
+              <x>  1.0    </x>
+              <y>  0      </y>
+              <z>  0      </z>
+            </location>
+            <feed>5</feed>
+            <thruster file="Main_nozzle">
+              <location unit="M">
+                <x> 1.0    </x>
+                <y> 0      </y>
+                <z> 0      </z>
+              </location>
+            </thruster>
+          </engine>
+          <tank type="FUEL">
+            <location unit="M">
+              <x>  0.5    </x>
+              <y>  0      </y>
+              <z>  0      </z>
+            </location>
+            <radius unit="M">0.480</radius>
+            <grain_config type="CYLINDRICAL">
+              <length unit="M"> 0.480 </length>
+              <bore_diameter unit="M"> 0.03 </bore_diameter>
+            </grain_config>
+            <capacity unit="KG"> 87.95 </capacity>
+            <contents unit="KG"> 87.95 </contents>
+          </tank>
+    </propulsion>
+
+    <!--########################################################################
+    Aero
+    #########################################################################-->
+    <aerodynamics>
+
+        <axis name="DRAG">
+            <function name="aero/force/drag">
+                <description>Drag_minimum</description>
+                <product>
+                    <property>aero/qbar-psf</property>
+                    <property>metrics/Sw-sqft</property>
+                    <table name="aero/coefficient/CD_min">
+                        <independentVar>velocities/mach</independentVar>
+                        <tableData>
+                            0.010   0.5
+                            0.800   0.55
+                            1.000   0.7
+                            1.5     0.5
+                            2.0     0.4
+                        </tableData>
+                    </table>
+                </product>
+            </function>
+        </axis>
+
+        <axis name="PITCH">
+            <function name="aero/coefficient/Cmalpha">
+                <description>Pitch moment due to alpha</description>
+                <product>
+                    <property>aero/qbar-psf</property>
+                    <property>metrics/Sw-sqft</property>
+                    <property>metrics/bw-ft</property>
+                    <property>aero/alpha-rad</property>
+                    <value>-0.2</value>
+                </product>
+            </function>
+            <function name="aero/coefficient/Cmq">
+                <description>Pitch_moment_due_to_pitch_rate</description>
+                <product>
+                    <property>aero/qbar-psf</property>
+                    <property>metrics/Sw-sqft</property>
+                    <property>metrics/cbarw-ft</property>
+                    <property>aero/ci2vel</property>
+                    <property>velocities/q-aero-rad_sec</property>
+                    <value>-20.0000</value>
+                </product>
+            </function>
+            <function name="aero/coefficient/Cmadot">
+                <description>Pitch_moment_due_to_alpha_rate</description>
+                <product>
+                    <property>aero/qbar-psf</property>
+                    <property>metrics/Sw-sqft</property>
+                    <property>metrics/cbarw-ft</property>
+                    <property>aero/ci2vel</property>
+                    <property>aero/alphadot-rad_sec</property>
+                    <value>-10.0000</value>
+                </product>
+            </function>
+        </axis>
+
+
+        <axis name="YAW">
+            <function name="aero/coefficient/Cmb">
+                <description>Pitch moment due to alpha</description>
+                <product>
+                    <property>aero/qbar-psf</property>
+                    <property>metrics/Sw-sqft</property>
+                    <property>metrics/bw-ft</property>
+                    <property>aero/beta-rad</property>
+                    <value>-0.0002</value>
+                </product>
+            </function>
+            <function name="aero/coefficient/Cnr">
+                 <description>Yaw_moment_due_to_yaw_rate</description>
+                 <product>
+                     <property>aero/qbar-psf</property>
+                     <property>metrics/Sw-sqft</property>
+                     <property>metrics/bw-ft</property>
+                     <property>aero/bi2vel</property>
+                     <property>velocities/r-aero-rad_sec</property>
+                     <value>-20.00</value>
+                 </product>
+             </function>
+        </axis>
+    </aerodynamics>
+
+    <ground_reactions /><!-- Not used - hold down model keeps vehicle in place -->
+    <system name="Guidance Executive" file="GuidanceExecutive" />
+
+</fdm_config>

@@ -1,0 +1,565 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8">
+  <title>Digitized Data From Historical Sources</title>
+  <meta name="description" content="Digitized Lambda-4S Data From Historical Sources">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="Digitized Data From Historical Sources">
+  <meta property="og:description" content="Digitized Lambda-4S Data From Historical Sources">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:type" content="website">
+
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/assets/style.css">
+
+  <link rel="apple-touch-icon" sizes="57x57" href="/assets/img/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/assets/img/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/assets/img/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/assets/img/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/assets/img/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/assets/img/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/assets/img/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/assets/img/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="/assets/img/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/assets/img/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="/assets/img/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/assets/img/favicon-16x16.png" sizes="16x16">
+  <link rel="shortcut icon" href="favicon.ico">
+  <meta name="msapplication-TileColor" content="#6677cc">
+  <meta name="msapplication-TileImage" content="/assets/img/mstile-144x144.png">
+  <meta name="theme-color" content="#6677cc">
+
+  
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-74838907-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+  
+
+  <script src="/assets/js/vendor/jquery-2.2.2.min.js"></script>
+ </head>
+ <body>
+
+  <section class="hero is-primary is-bold">
+    <header class="hero-head">
+ <div class="container">
+  <nav class="nav">
+
+   <div class="nav-left">
+    <a class="nav-item" href="/">
+     <img src="/assets/img/title.png" alt="open-aerospace">
+    </a>
+   </div>
+
+   <div id="nav-menu" class="nav-right nav-menu">
+    <span class="nav-item">
+     <a  href="/">Home</a>
+    </span>
+    <span class="nav-item">
+     <a  href="/about/">About</a>
+    </span>
+    <span class="nav-item">
+     <a class="button is-outlined" href="https://github.com/open-aerospace">
+      <i class="fa fa-github"></i>
+      GitHub
+     </a>
+    </span>
+   </div>
+  </nav>
+ </div>
+</header>
+
+    <div class="hero-body">
+ <div class="container">
+  <p class="title">
+   Lambda-4S
+  </p>
+  <p class="subtitle">
+   The Smallest Orbital Rocket
+
+  </p>
+ </div>
+</div>
+
+<div class="hero-foot">
+ <div class="container">
+  <nav class="tabs is-boxed">
+   <ul>
+    
+     <li class=""><a href="/Lambda-4S/">Lambda-4S Overview</a></li>
+    
+     <li class=""><a href="/Lambda-4S/history/">History</a></li>
+    
+     <li class="is-active"><a href="/Lambda-4S/data/">Digitized Data</a></li>
+    
+     <li class=""><a href="/Lambda-4S/simulation/">Simulation</a></li>
+    
+   </ul>
+  </nav>
+ </div>
+</div>
+
+  </section>
+
+
+  <nav class="nav has-shadow">
+  <div class="container">
+    <div class="nav-left">
+    
+      
+    
+      
+        
+          <a class="nav-item is-tab is-active" href="/Lambda-4S/data/">Overview</a>
+        
+          <a class="nav-item is-tab " href="/Lambda-4S/data/stage1/">First Stage Thrust Curve</a>
+        
+      
+    
+    </div>
+  </div>
+</nav>
+
+<section class="section">
+ <div class="container">
+  <div class="content">
+
+    <h1 id="digitized-data-from-historical-sources">Digitized Data From Historical Sources</h1>
+
+<p>Most of the primary sources are from the 1960’s. They contain some really interesting charts, but not the raw data. <a href="http://arohatgi.info/WebPlotDigitizer/app/?">WebPlotDigitizer</a> was used to extract approximate values as CSV files.</p>
+
+<p><strong>Table of Contents:</strong></p>
+
+<ul id="markdown-toc">
+  <li><a href="#modeled-l-4s-5-trajectory-3-cases-first-stage-and-booster" id="markdown-toc-modeled-l-4s-5-trajectory-3-cases-first-stage-and-booster">Modeled L-4S-5 Trajectory, 3 Cases: First Stage and Booster</a></li>
+  <li><a href="#first-stage-thrust-curve-735-33" id="markdown-toc-first-stage-thrust-curve-735-33">First Stage Thrust Curve (735-3/3)</a></li>
+  <li><a href="#first-stage-and-booster-thrust-curve-l-4s-2" id="markdown-toc-first-stage-and-booster-thrust-curve-l-4s-2">First Stage and Booster Thrust Curve (L-4S-2)</a></li>
+  <li><a href="#second-stage-thrust-curve-735-13" id="markdown-toc-second-stage-thrust-curve-735-13">Second Stage Thrust Curve (735-1/3)</a></li>
+  <li><a href="#modeled-l-4s-5-trajectory-first-3-stages-key-figures" id="markdown-toc-modeled-l-4s-5-trajectory-first-3-stages-key-figures">Modeled L-4S-5 Trajectory, First 3 Stages Key Figures</a></li>
+</ul>
+
+<h2 id="modeled-l-4s-5-trajectory-3-cases-first-stage-and-booster">Modeled L-4S-5 Trajectory, 3 Cases: First Stage and Booster</h2>
+
+<p>The L-4S trajectory was optimized by simulating several cases of launch rail angle and azimuth.</p>
+
+<p>Here the results of 3 primary cases, representing the nominal range of likely flights is shown for the booster and first part of stage 1. I’ve emphasized the paths to help WebPlotDigitizer pull out the data a little more cleanly.</p>
+
+<p><img src="L-4-S-5_model_trajectory_stage1.png" alt="Photocopied chart: Modeled trajectory from L-4S-5, first stage and booster" /></p>
+
+<blockquote>
+  <p>Figure 2-17, “<a href="../primary sources/ISAS Report 110000197264 -- L-4T-1, L-4S-4, L-4S-5 Specifications and Flight Plan.pdf">L-4T-1, L-4S-4, L-4S-5 Specifications and Flight Plan</a>” (pg. 451).</p>
+</blockquote>
+
+<p>Rendered to:</p>
+
+<ul>
+  <li><a href="traj_model_case_1_booster.csv">traj_model_case_1_booster.csv</a></li>
+  <li><a href="traj_model_case_2_booster.csv">traj_model_case_2_booster.csv</a></li>
+  <li><a href="traj_model_case_3_booster.csv">traj_model_case_3_booster.csv</a></li>
+  <li><a href="traj_model_case_1_stage1.csv">traj_model_case_1_stage1.csv</a></li>
+  <li><a href="traj_model_case_2_stage1.csv">traj_model_case_2_stage1.csv</a></li>
+  <li><a href="traj_model_case_3_stage1.csv">traj_model_case_3_stage1.csv</a></li>
+</ul>
+
+<div class="column is-6">
+
+  <p>Format:</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th style="text-align: center">Column</th>
+        <th style="text-align: right">Value</th>
+        <th style="text-align: left">Units</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="text-align: center">1</td>
+        <td style="text-align: right">Downrange</td>
+        <td style="text-align: left">km</td>
+      </tr>
+      <tr>
+        <td style="text-align: center">2</td>
+        <td style="text-align: right">Altitude</td>
+        <td style="text-align: left">km</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+
+<h2 id="first-stage-thrust-curve-735-33">First Stage Thrust Curve (735-3/3)</h2>
+
+<p>The first stage is called a 735 (735 mm diameter) 3/3 (full size) motor. It’s an polyurethane + ammonium perchlorate composite motor.</p>
+
+<p><img src="735-full-thrust.png" alt="Photocopied chart: Lambda first stage  thrust curve" /></p>
+
+<blockquote>
+  <p>Figure 2-1, “<a href="../primary sources/ISAS Report 110000196953 -- L-Engine Static Fire Tests.pdf">L-Engine Static Fire Tests</a>” (pg. 626).</p>
+</blockquote>
+
+<p>Rendered to:</p>
+
+<ul>
+  <li><a href="735-33-thrustcurve.csv">735-33-thrustcurve.csv</a></li>
+</ul>
+
+<p>With units converted to Newtons.</p>
+
+<div class="column is-6">
+
+  <p>Format:</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th style="text-align: center">Column</th>
+        <th style="text-align: right">Value</th>
+        <th style="text-align: left">Units</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="text-align: center">1</td>
+        <td style="text-align: right">Time</td>
+        <td style="text-align: left">s</td>
+      </tr>
+      <tr>
+        <td style="text-align: center">2</td>
+        <td style="text-align: right">Sea-level Thrust</td>
+        <td style="text-align: left">N</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+
+<h2 id="first-stage-and-booster-thrust-curve-l-4s-2">First Stage and Booster Thrust Curve (L-4S-2)</h2>
+
+<p>At the moment I can only find a thrust curve from the earlier L-4S-2. It should be largely identical to vehicle 5.</p>
+
+<p><img src="L-4S-2_first_stage_thrust.png" alt="Photocopied chart: first stage and booster thrust curve" /></p>
+
+<blockquote>
+  <p>Figure 2-a, “<a href="../primary sources/ISAS Report 110000196956 -- L4S-2 Flight Plan.pdf">L4S-2 Flight Plan</a>” (pg. 679).</p>
+</blockquote>
+
+<p>Rendered to:</p>
+
+<ul>
+  <li><a href="thrust_booster_and_stage1.csv">thrust_booster_and_stage1.csv</a></li>
+</ul>
+
+<div class="column is-6">
+
+  <p>Format:</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th style="text-align: center">Column</th>
+        <th style="text-align: right">Value</th>
+        <th style="text-align: left">Units</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="text-align: center">1</td>
+        <td style="text-align: right">Time</td>
+        <td style="text-align: left">s</td>
+      </tr>
+      <tr>
+        <td style="text-align: center">2</td>
+        <td style="text-align: right">Sea-level Thrust</td>
+        <td style="text-align: left">kg</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+
+<h2 id="second-stage-thrust-curve-735-13">Second Stage Thrust Curve (735-1/3)</h2>
+
+<p>The Second stage is a one third scaled first stage (735 1/3) motor. It’s an polyurethane + ammonium perchlorate composite motor.</p>
+
+<p>This reference had two thrust curves from different test articles. 735 1/3–2 seems closer to the flight version of the motor, but the burn time is too short.</p>
+
+<p><img src="735-third-thrust.png" alt="Photocopied chart: Lambda third stage  thrust curve" /></p>
+
+<blockquote>
+  <p>Figure 3-2, “<a href="../primary sources/ISAS Report 110000196953 -- L-Engine Static Fire Tests.pdf">L-Engine Static Fire Tests</a>” (pg. 628).</p>
+</blockquote>
+
+<p>Rendered to:</p>
+
+<ul>
+  <li><a href="735-13_1-thrustcurve.csv">735-13_1-thrustcurve.csv</a></li>
+  <li><a href="735-13_2-thrustcurve.csv">735-13_2-thrustcurve.csv</a></li>
+</ul>
+
+<p>With units converted to Newtons.</p>
+
+<div class="column is-6">
+
+  <p>Format:</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th style="text-align: center">Column</th>
+        <th style="text-align: right">Value</th>
+        <th style="text-align: left">Units</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="text-align: center">1</td>
+        <td style="text-align: right">Time</td>
+        <td style="text-align: left">s</td>
+      </tr>
+      <tr>
+        <td style="text-align: center">2</td>
+        <td style="text-align: right">Sea-level Thrust</td>
+        <td style="text-align: left">N</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+
+<h2 id="modeled-l-4s-5-trajectory-first-3-stages-key-figures">Modeled L-4S-5 Trajectory, First 3 Stages Key Figures</h2>
+
+<p>Cleaned up a bit from the original for easier digitization.</p>
+
+<p><img src="L-4S-5_flight_overview.png" alt="Photocopied chart: Modeled trajectory from L-4S-5, first 3 stages" /></p>
+
+<blockquote>
+  <p>Figure 2-2, “<a href="../primary sources/ISAS Report 110000197264 -- L-4T-1, L-4S-4, L-4S-5 Specifications and Flight Plan.pdf">L-4T-1, L-4S-4, L-4S-5 Specifications and Flight Plan</a>” (pg. 443).</p>
+</blockquote>
+
+<p>There are some key numbers highlighted in this chart:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Figure</th>
+      <th style="text-align: right">Value</th>
+      <th style="text-align: left">Units</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Maximum Acceleration (Boost off rail)</td>
+      <td style="text-align: right">70.3</td>
+      <td style="text-align: left">m/s/s</td>
+    </tr>
+    <tr>
+      <td>Maximum Dynamic Pressure (MaxQ)</td>
+      <td style="text-align: right">2.44</td>
+      <td style="text-align: left">kg/cm²</td>
+    </tr>
+    <tr>
+      <td>Maximum Velocity (First Stage)</td>
+      <td style="text-align: right">1.033</td>
+      <td style="text-align: left">km/s</td>
+    </tr>
+    <tr>
+      <td>Minimum Acceleration (Drag induced, First Stage)</td>
+      <td style="text-align: right">-14.4</td>
+      <td style="text-align: left">m/s/s</td>
+    </tr>
+    <tr>
+      <td>Maximum Acceleration (Second Stage)</td>
+      <td style="text-align: right">79.9</td>
+      <td style="text-align: left">m/s/s</td>
+    </tr>
+    <tr>
+      <td>Maximum Velocity (Second Stage)</td>
+      <td style="text-align: right">2.592</td>
+      <td style="text-align: left">km/s</td>
+    </tr>
+    <tr>
+      <td>Minimum Acceleration (Second Stage)</td>
+      <td style="text-align: right">-4.58</td>
+      <td style="text-align: left">m/s/s</td>
+    </tr>
+    <tr>
+      <td>Maximum Acceleration (Third Stage)</td>
+      <td style="text-align: right">114.8</td>
+      <td style="text-align: left">m/s/s</td>
+    </tr>
+    <tr>
+      <td>Maximum Velocity (Third Stage)</td>
+      <td style="text-align: right">4.621</td>
+      <td style="text-align: left">km/s</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Acceleration</strong> rendered to:</p>
+
+<ul>
+  <li><a href="l-4S-5_mainstages_acceleration.csv">l-4S-5_mainstages_acceleration.csv</a></li>
+</ul>
+
+<div class="column is-6">
+
+  <p>Format:</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th style="text-align: center">Column</th>
+        <th style="text-align: right">Value</th>
+        <th style="text-align: left">Units</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="text-align: center">1</td>
+        <td style="text-align: right">Time</td>
+        <td style="text-align: left">s</td>
+      </tr>
+      <tr>
+        <td style="text-align: center">2</td>
+        <td style="text-align: right">Accelearation</td>
+        <td style="text-align: left">m/s/s</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+
+<p><strong>Velocity</strong> rendered to:</p>
+
+<ul>
+  <li><a href="l-4S-5_mainstages_velocity.csv">l-4S-5_mainstages_velocity.csv</a></li>
+</ul>
+
+<div class="column is-6">
+
+  <p>Format:</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th style="text-align: center">Column</th>
+        <th style="text-align: right">Value</th>
+        <th style="text-align: left">Units</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="text-align: center">1</td>
+        <td style="text-align: right">Time</td>
+        <td style="text-align: left">s</td>
+      </tr>
+      <tr>
+        <td style="text-align: center">2</td>
+        <td style="text-align: right">Velocity</td>
+        <td style="text-align: left">km/s</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+
+<p><strong>Dynamic Pressure</strong> rendered to:</p>
+
+<ul>
+  <li><a href="l-4S-5_mainstages_dpress.csv">l-4S-5_mainstages_dpress.csv</a></li>
+</ul>
+
+<div class="column is-6">
+
+  <p>Format:</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th style="text-align: center">Column</th>
+        <th style="text-align: right">Value</th>
+        <th style="text-align: left">Units</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="text-align: center">1</td>
+        <td style="text-align: right">Time</td>
+        <td style="text-align: left">s</td>
+      </tr>
+      <tr>
+        <td style="text-align: center">2</td>
+        <td style="text-align: right">Dynamic Pressure</td>
+        <td style="text-align: left">kg/cm²</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+
+<p><strong>Altitude</strong> rendered to:</p>
+
+<ul>
+  <li><a href="l-4S-5_mainstages_altitude.csv">l-4S-5_mainstages_altitude.csv</a></li>
+</ul>
+
+<div class="column is-6">
+
+  <p>Format:</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th style="text-align: center">Column</th>
+        <th style="text-align: right">Value</th>
+        <th style="text-align: left">Units</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="text-align: center">1</td>
+        <td style="text-align: right">Time</td>
+        <td style="text-align: left">s</td>
+      </tr>
+      <tr>
+        <td style="text-align: center">2</td>
+        <td style="text-align: right">Altitude</td>
+        <td style="text-align: left">km</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+
+
+
+  </div>
+ </div>
+</section>
+
+
+  <footer class="footer">
+   <div class="container">
+    <div class="is-text-centered">
+     <p>
+      <strong>Open Aerospace</strong> is a collaborative effort. Most work is copyleft licensed e.g. GPL. This website content is licensed <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>.
+     </p>
+     <p>
+      Please comment, update, fix, or complain about this site using github's issues and pull requests.
+     </p>
+     <p><a href="https://github.com/open-aerospace/open-aerospace.github.io">github.com/open-aerospace/open-aerospace.github.io</a></p>
+    </div>
+   </div>
+  </footer>
+
+ </body>
+</html>

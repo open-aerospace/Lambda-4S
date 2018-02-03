@@ -1,0 +1,1028 @@
+
+
+     JSBSim Flight Dynamics Model v1.0 Feb  3 2018 17:08:34
+            [JSBSim-ML v2.0]
+
+JSBSim startup beginning ...
+
+[4mReading Aircraft Configuration File[24m: [1mLambda-4S-5[22m
+                            Version: [1m2.0[22m
+
+
+[1mThis aircraft model is an [31mALPHA[0m[1m release!!!
+
+[0mThis aircraft model may not even properly load, and probably will not fly as expected.
+
+[31m[1mUse this model for development purposes ONLY!!![22m[0m
+
+  Description:   Lambda-4S-5 orbital rocket. Succesfully launched in February 1970.
+  Model Author:  Nathan Bergey
+  Creation Date: 2015-12-01
+  Version:       0.2
+
+  Aircraft Metrics:
+    WingArea: 5.920151
+    WingSpan: 2.411417
+    Incidence: 0.000000
+    Chord: 3.280840
+    H. Tail Area: 0.000000
+    H. Tail Arm: 0.000000
+    V. Tail Area: 0.000000
+    V. Tail Arm: 0.000000
+    Eyepoint (x, y, z): 0.000000 , 0.000000 , 0.000000
+    Ref Pt (x, y, z): 464.566930 , 0.000000 , 0.000000
+    Visual Ref Pt (x, y, z): 0.000000 , 0.000000 , 0.000000
+
+  Mass and Balance:
+    baseIxx: 0.191011 slug-ft2
+    baseIyy: 0.321548 slug-ft2
+    baseIzz: 0.321548 slug-ft2
+    baseIxy: -0.000000 slug-ft2
+    baseIxz: 0.000000 slug-ft2
+    baseIyz: -0.000000 slug-ft2
+    Empty Weight: 50.816551 lbm
+    CG (x, y, z): 21.929134 , 0.000000 , 0.000000
+    Point Mass Object: 22.046226 lbs. at X, Y, Z (in.): 19.685039  0.000000  0.000000
+    Point Mass Object: 603.846136 lbs. at X, Y, Z (in.): 76.377953  0.000000  0.000000
+    Point Mass Object: 1365.543252 lbs. at X, Y, Z (in.): 236.220473  0.000000  0.000000
+    Point Mass Object: 419.980609 lbs. at X, Y, Z (in.): 527.559056  0.000000  20.570866
+    Point Mass Object: 419.980609 lbs. at X, Y, Z (in.): 527.559056  0.000000  -20.570866
+    Point Mass Object: 2401.715884 lbs. at X, Y, Z (in.): 485.433072  0.000000  0.000000
+
+  Ground Reactions: 
+
+  Propulsion:
+      FUEL tank holds 687.842258 lbs. FUEL
+      currently at 100.000000% of maximum capacity
+      Tank location (X, Y, Z): 527.559056, 0.000000, 20.570866
+      Effective radius: 12.204724 inches
+      Initial temperature: -9999.000000 Fahrenheit
+      Priority: 1
+      FUEL tank holds 687.842258 lbs. FUEL
+      currently at 100.000000% of maximum capacity
+      Tank location (X, Y, Z): 527.559056, 0.000000, -20.570866
+      Effective radius: 12.204724 inches
+      Initial temperature: -9999.000000 Fahrenheit
+      Priority: 1
+      FUEL tank holds 8569.368131 lbs. FUEL
+      currently at 100.000000% of maximum capacity
+      Tank location (X, Y, Z): 472.440946, 0.000000, 0.000000
+      Effective radius: 28.937008 inches
+      Initial temperature: -9999.000000 Fahrenheit
+      Priority: 1
+      FUEL tank holds 4067.528737 lbs. FUEL
+      currently at 100.000000% of maximum capacity
+      Tank location (X, Y, Z): 196.850394, 0.000000, 0.000000
+      Effective radius: 28.937008 inches
+      Initial temperature: -9999.000000 Fahrenheit
+      Priority: 1
+      FUEL tank holds 1207.030885 lbs. FUEL
+      currently at 100.000000% of maximum capacity
+      Tank location (X, Y, Z): 78.740158, 0.000000, 0.000000
+      Effective radius: 19.842520 inches
+      Initial temperature: -9999.000000 Fahrenheit
+      Priority: 1
+      FUEL tank holds 193.896560 lbs. FUEL
+      currently at 100.000000% of maximum capacity
+      Tank location (X, Y, Z): 19.685039, 0.000000, 0.000000
+      Effective radius: 18.897638 inches
+      Initial temperature: -9999.000000 Fahrenheit
+      Priority: 1
+      Nozzle Name: Lambda Booster Nozzle
+      Nozzle Exit Area = 0.839585
+      X = 650.472442
+      Y = 0.000000
+      Z = 20.570866
+      Pitch = 0.000000 degrees
+      Yaw = 0.000000 degrees
+    1 dimensional table with 80 rows.
+	0.0000	29507.1480	
+	13.7990	29507.1480	
+	31.3620	29507.1480	
+	43.8550	29260.6000	
+	56.2010	28819.7270	
+	68.4320	28718.5180	
+	80.5950	28494.7210	
+	92.6680	28302.8690	
+	104.6810	28208.4490	
+	116.6700	28188.7330	
+	128.6520	28180.3250	
+	140.6300	28164.2290	
+	152.6220	28251.0280	
+	164.6630	28391.6010	
+	176.7530	28481.6820	
+	188.8870	28601.6400	
+	201.0960	28832.3840	
+	213.3890	28993.6170	
+	225.7150	28993.1000	
+	238.0440	29004.8120	
+	250.3910	29076.4590	
+	262.7540	29083.6080	
+	275.1210	29093.4540	
+	287.4940	29110.7650	
+	299.8640	29084.2820	
+	312.2450	29158.6710	
+	324.6370	29134.7070	
+	337.0200	29116.9690	
+	349.4010	29125.0850	
+	361.7750	29084.9120	
+	374.1350	29063.0380	
+	386.4790	29003.0360	
+	398.7910	28918.5310	
+	411.0680	28835.4410	
+	423.3060	28735.2440	
+	435.5010	28632.5730	
+	447.6570	28551.4400	
+	459.7770	28460.9990	
+	471.8410	28290.3020	
+	483.8180	28053.7580	
+	495.7000	27843.8760	
+	507.4790	27567.2490	
+	519.1430	27300.6700	
+	530.6890	27014.3080	
+	542.1060	26696.1810	
+	553.3780	26326.6180	
+	564.4770	25885.5200	
+	575.3880	25445.1420	
+	586.1210	25044.2400	
+	596.6570	24519.1980	
+	606.9520	23913.8100	
+	616.9410	23074.6660	
+	626.5340	22053.8530	
+	635.5940	20567.5730	
+	643.8340	18193.8600	
+	650.9470	15265.0260	
+	656.8570	12539.0590	
+	661.6640	10073.7360	
+	665.5890	8390.7490	
+	668.9080	7222.5740	
+	671.7710	6248.0270	
+	674.2530	5425.9230	
+	676.4210	4772.0430	
+	678.3470	4290.2770	
+	680.0710	3819.3700	
+	681.5940	3344.5060	
+	682.9030	2812.2710	
+	683.9920	2309.3500	
+	684.8950	1940.1240	
+	685.6510	1616.2190	
+	686.2520	1211.9230	
+	686.7060	922.0320	
+	687.0550	722.9180	
+	687.3300	568.7670	
+	687.5270	360.2560	
+	687.6540	233.5540	
+	687.7410	175.2610	
+	687.8020	112.5170	
+	687.8340	37.0490	
+	687.8410	0.0000	
+      Engine Name: Lambda-4S Strap On Booster
+      Vacuum Isp = 235.2000
+      Maximum Throttle = 1.0000
+      Minimum Throttle = 0.0000
+      Fuel Flow (max) = 0.0000
+      Oxidizer Flow (max) = 0.0000
+      Nozzle Name: Lambda Booster Nozzle
+      Nozzle Exit Area = 0.8396
+      X = 650.4724
+      Y = 0.0000
+      Z = -20.5709
+      Pitch = 0.0000 degrees
+      Yaw = 0.0000 degrees
+    1 dimensional table with 80 rows.
+	0.0000	29507.1480	
+	13.7990	29507.1480	
+	31.3620	29507.1480	
+	43.8550	29260.6000	
+	56.2010	28819.7270	
+	68.4320	28718.5180	
+	80.5950	28494.7210	
+	92.6680	28302.8690	
+	104.6810	28208.4490	
+	116.6700	28188.7330	
+	128.6520	28180.3250	
+	140.6300	28164.2290	
+	152.6220	28251.0280	
+	164.6630	28391.6010	
+	176.7530	28481.6820	
+	188.8870	28601.6400	
+	201.0960	28832.3840	
+	213.3890	28993.6170	
+	225.7150	28993.1000	
+	238.0440	29004.8120	
+	250.3910	29076.4590	
+	262.7540	29083.6080	
+	275.1210	29093.4540	
+	287.4940	29110.7650	
+	299.8640	29084.2820	
+	312.2450	29158.6710	
+	324.6370	29134.7070	
+	337.0200	29116.9690	
+	349.4010	29125.0850	
+	361.7750	29084.9120	
+	374.1350	29063.0380	
+	386.4790	29003.0360	
+	398.7910	28918.5310	
+	411.0680	28835.4410	
+	423.3060	28735.2440	
+	435.5010	28632.5730	
+	447.6570	28551.4400	
+	459.7770	28460.9990	
+	471.8410	28290.3020	
+	483.8180	28053.7580	
+	495.7000	27843.8760	
+	507.4790	27567.2490	
+	519.1430	27300.6700	
+	530.6890	27014.3080	
+	542.1060	26696.1810	
+	553.3780	26326.6180	
+	564.4770	25885.5200	
+	575.3880	25445.1420	
+	586.1210	25044.2400	
+	596.6570	24519.1980	
+	606.9520	23913.8100	
+	616.9410	23074.6660	
+	626.5340	22053.8530	
+	635.5940	20567.5730	
+	643.8340	18193.8600	
+	650.9470	15265.0260	
+	656.8570	12539.0590	
+	661.6640	10073.7360	
+	665.5890	8390.7490	
+	668.9080	7222.5740	
+	671.7710	6248.0270	
+	674.2530	5425.9230	
+	676.4210	4772.0430	
+	678.3470	4290.2770	
+	680.0710	3819.3700	
+	681.5940	3344.5060	
+	682.9030	2812.2710	
+	683.9920	2309.3500	
+	684.8950	1940.1240	
+	685.6510	1616.2190	
+	686.2520	1211.9230	
+	686.7060	922.0320	
+	687.0550	722.9180	
+	687.3300	568.7670	
+	687.5270	360.2560	
+	687.6540	233.5540	
+	687.7410	175.2610	
+	687.8020	112.5170	
+	687.8340	37.0490	
+	687.8410	0.0000	
+      Engine Name: Lambda-4S Strap On Booster
+      Vacuum Isp = 235.2000
+      Maximum Throttle = 1.0000
+      Minimum Throttle = 0.0000
+      Fuel Flow (max) = 0.0000
+      Oxidizer Flow (max) = 0.0000
+      Nozzle Name: Lambda First Stage Nozzle
+      Nozzle Exit Area = 0.1076
+      X = 650.4724
+      Y = 0.0000
+      Z = 0.0000
+      Pitch = 0.0000 degrees
+      Yaw = 0.0000 degrees
+    1 dimensional table with 281 rows.
+	0.0000	369.8920	
+	18.0630	70787.8670	
+	75.4250	106756.8100	
+	124.8110	107245.4910	
+	174.4230	107732.6030	
+	224.0190	107181.0450	
+	273.3490	106577.0440	
+	322.3920	105937.8080	
+	371.1400	105302.0850	
+	419.5600	104512.6070	
+	467.6170	103731.3400	
+	515.3070	102919.1700	
+	562.5720	101892.3660	
+	609.3510	100813.1680	
+	655.6690	99896.6650	
+	701.5830	99059.2600	
+	747.0740	98064.2690	
+	792.1300	97175.2100	
+	836.8300	96521.4880	
+	881.2240	95847.6660	
+	925.2940	95120.1840	
+	969.0570	94512.8260	
+	1012.5390	93906.7160	
+	1055.7630	93393.6960	
+	1098.7740	92983.6710	
+	1141.5670	92451.3050	
+	1184.1340	91998.7690	
+	1226.5220	91681.5100	
+	1268.7550	91325.7760	
+	1310.8350	91013.6920	
+	1352.7620	90667.2030	
+	1394.5330	90339.6900	
+	1436.1660	90063.3480	
+	1477.6700	89786.3900	
+	1519.0550	89543.6840	
+	1560.3280	89301.4950	
+	1601.4920	89075.7370	
+	1642.5560	88864.1740	
+	1683.5380	88718.3520	
+	1724.4520	88571.9520	
+	1765.2860	88372.1930	
+	1806.0610	88316.9710	
+	1846.8220	88312.2300	
+	1887.5500	88170.6270	
+	1928.2170	88050.7070	
+	1968.8450	87998.3900	
+	2009.4790	88082.4860	
+	2050.1520	88160.7870	
+	2090.7960	87961.6650	
+	2131.3600	87812.4550	
+	2171.8740	87742.3610	
+	2212.3510	87656.9140	
+	2252.7920	87582.1040	
+	2293.2050	87540.9460	
+	2333.6040	87517.5610	
+	2373.9650	87374.2610	
+	2414.2650	87257.3020	
+	2454.5390	87258.4330	
+	2494.7970	87189.5900	
+	2535.0030	87034.7280	
+	2575.1410	86893.8240	
+	2615.2340	86836.0800	
+	2655.3130	86838.6970	
+	2695.3690	86732.9890	
+	2735.3520	86523.9980	
+	2775.2610	86413.2910	
+	2815.1450	86412.9220	
+	2855.0200	86373.7780	
+	2894.8690	86303.1540	
+	2934.6820	86216.8030	
+	2974.4590	86147.9670	
+	3014.2010	86061.9480	
+	3053.8870	85906.7940	
+	3093.5080	85782.9960	
+	3133.0850	85712.8110	
+	3172.6260	85628.9250	
+	3212.1240	85525.0250	
+	3251.5770	85436.6640	
+	3290.9900	85347.3000	
+	3330.3640	85269.2780	
+	3369.6840	85116.5810	
+	3408.9430	85000.5230	
+	3448.1750	85003.7040	
+	3487.4080	85002.7510	
+	3526.6170	84899.3530	
+	3565.7700	84759.3150	
+	3604.8820	84722.4440	
+	3643.9740	84672.9390	
+	3683.0420	84618.0020	
+	3722.0930	84601.9100	
+	3761.1230	84524.3580	
+	3800.1020	84382.7930	
+	3839.0130	84224.3840	
+	3877.8530	84080.6950	
+	3916.6450	84013.9490	
+	3955.4090	83961.9690	
+	3994.1460	83892.4940	
+	4032.8420	83789.1470	
+	4071.4830	83649.7900	
+	4110.0780	83594.8000	
+	4148.6500	83547.6170	
+	4187.1800	83412.4050	
+	4225.6570	83315.8900	
+	4264.1070	83298.4860	
+	4302.5290	83194.7410	
+	4340.8950	83053.4660	
+	4379.2230	83029.6320	
+	4417.5450	83029.9850	
+	4455.8670	83028.3750	
+	4494.1600	82905.2560	
+	4532.3760	82697.0920	
+	4570.5250	82608.5940	
+	4608.6370	82540.3260	
+	4646.7170	82469.1920	
+	4684.7720	82434.8480	
+	4722.8010	82354.7130	
+	4760.7870	82247.1370	
+	4798.7340	82185.4880	
+	4836.6440	82088.5790	
+	4874.4990	81947.7880	
+	4912.3020	81863.5160	
+	4950.0700	81794.2080	
+	4987.8020	81707.5800	
+	5025.4980	81638.0060	
+	5063.1740	81620.8530	
+	5100.8270	81539.9440	
+	5138.4180	81351.9140	
+	5175.9320	81206.1390	
+	5213.3930	81121.1500	
+	5250.8060	80996.4890	
+	5288.1850	80975.4190	
+	5325.5460	80920.7910	
+	5362.8550	80749.4530	
+	5400.1090	80682.7290	
+	5437.3240	80577.6600	
+	5474.4950	80491.9070	
+	5511.6340	80440.5880	
+	5548.7330	80320.4630	
+	5585.7840	80229.7890	
+	5622.8100	80213.8030	
+	5659.8070	80102.1200	
+	5696.7410	79942.9770	
+	5733.6170	79849.8120	
+	5770.4570	79787.3350	
+	5807.2830	79790.6780	
+	5844.0620	79578.3690	
+	5880.7440	79376.5670	
+	5917.3650	79310.3200	
+	5953.9540	79240.8090	
+	5990.5120	79171.6530	
+	6027.0370	79102.7720	
+	6063.5270	79017.5530	
+	6099.9740	78913.3840	
+	6136.3790	78840.4260	
+	6172.7590	78803.8660	
+	6209.1210	78759.2370	
+	6245.4400	78623.2410	
+	6281.7050	78521.7820	
+	6317.9330	78462.3520	
+	6354.1310	78391.8400	
+	6390.3010	78342.7170	
+	6426.4760	78412.9750	
+	6462.6680	78414.5120	
+	6498.8240	78259.8370	
+	6534.9200	78153.5540	
+	6570.9720	78065.6360	
+	6606.9870	78000.2770	
+	6642.9530	77848.9800	
+	6678.8640	77759.2840	
+	6714.7660	77813.9300	
+	6750.6550	77701.4270	
+	6786.4630	77463.6800	
+	6822.1610	77225.2590	
+	6857.7760	77105.9960	
+	6893.3200	76914.7480	
+	6928.7720	76707.1370	
+	6964.1290	76501.6980	
+	6999.3710	76209.4710	
+	7034.4810	75933.0190	
+	7069.4560	75622.9110	
+	7104.2920	75330.5620	
+	7138.9790	74976.4070	
+	7173.4840	74543.4380	
+	7207.8110	74201.9850	
+	7241.9880	73898.1960	
+	7275.9910	73442.0020	
+	7309.7760	72957.3880	
+	7343.3210	72403.6700	
+	7376.6110	71850.8360	
+	7409.6350	71249.0760	
+	7442.3600	70557.3720	
+	7474.7850	69947.1150	
+	7506.9250	69321.6330	
+	7538.7280	68489.7500	
+	7570.1500	67670.0180	
+	7601.2160	66944.6490	
+	7631.9000	66017.5980	
+	7662.1440	65036.7560	
+	7691.9240	64009.6690	
+	7721.2200	62937.8090	
+	7750.0140	61831.4070	
+	7778.2890	60691.2200	
+	7806.0330	59532.3730	
+	7833.2480	58395.8170	
+	7859.9000	57094.4000	
+	7885.9290	55694.4690	
+	7911.3190	54329.0560	
+	7936.0770	52951.5570	
+	7960.1910	51540.7390	
+	7983.6190	49977.9070	
+	8006.3160	48373.9850	
+	8028.2990	46883.3080	
+	8049.5820	45342.7030	
+	8070.1350	43718.0460	
+	8089.9890	42317.3110	
+	8109.1980	40920.3640	
+	8127.7460	39451.3020	
+	8145.6340	38059.2620	
+	8162.9100	36805.3610	
+	8179.6230	35612.8250	
+	8195.7910	34448.5490	
+	8211.4490	33404.1060	
+	8226.6100	32290.7620	
+	8241.2970	31350.5530	
+	8255.5370	30355.7120	
+	8269.3130	29338.7100	
+	8282.6470	28441.0320	
+	8295.5620	27525.0470	
+	8308.0590	26626.4790	
+	8320.1370	25710.3780	
+	8331.8000	24826.4850	
+	8343.0590	23961.9210	
+	8353.9220	23110.6800	
+	8364.4120	22346.2480	
+	8374.5660	21652.7780	
+	8384.3810	20879.7410	
+	8393.8510	20156.3230	
+	8402.9950	19462.8280	
+	8411.8260	18807.5120	
+	8420.3550	18150.6340	
+	8428.5810	17492.6600	
+	8436.5300	16954.9130	
+	8444.2290	16405.5510	
+	8451.6610	15800.3480	
+	8458.8250	15243.2750	
+	8465.7340	14692.8420	
+	8472.3840	14122.6230	
+	8478.7530	13474.8870	
+	8484.8240	12836.2840	
+	8490.6320	12328.6090	
+	8496.2180	11876.2320	
+	8501.5830	11374.2250	
+	8506.7170	10873.1930	
+	8511.6210	10373.4360	
+	8516.2720	9783.9730	
+	8520.6870	9346.0140	
+	8524.9020	8917.8850	
+	8528.9100	8451.5080	
+	8532.7070	8001.4380	
+	8536.2980	7559.7260	
+	8539.7000	7182.5420	
+	8542.9200	6767.0790	
+	8545.9440	6337.4400	
+	8548.7610	5868.5310	
+	8551.3700	5437.8420	
+	8553.7800	5005.6530	
+	8555.9860	4555.7250	
+	8557.9970	4157.9620	
+	8559.8210	3742.6200	
+	8561.4670	3390.1310	
+	8562.9610	3086.2680	
+	8564.2750	2607.8920	
+	8565.3420	2014.3830	
+	8566.1680	1563.1870	
+	8566.8370	1339.5760	
+	8567.4090	1138.6640	
+	8567.9150	1053.6840	
+	8568.3650	895.2790	
+	8568.7340	705.1970	
+	8569.0560	687.4100	
+	8569.3580	621.7480	
+      Engine Name: Lambda-4S First Stage
+      Vacuum Isp = 216.7000
+      Maximum Throttle = 1.0000
+      Minimum Throttle = 0.0000
+      Fuel Flow (max) = 0.0000
+      Oxidizer Flow (max) = 0.0000
+      Nozzle Name: Lambda First Stage Nozzle
+      Nozzle Exit Area = 4.3056
+      X = 314.9606
+      Y = 0.0000
+      Z = 0.0000
+      Pitch = 0.0000 degrees
+      Yaw = 0.0000 degrees
+    1 dimensional table with 67 rows.
+	0.0000	29160.0200	
+	66.8690	29476.9790	
+	133.3120	28786.7920	
+	198.2340	28142.7600	
+	261.8200	27616.2120	
+	324.2850	27159.1300	
+	385.7800	26765.6920	
+	446.4980	26477.5770	
+	506.5650	26194.7670	
+	566.0300	25949.3210	
+	624.9810	25745.3290	
+	683.4990	25568.5620	
+	741.6480	25422.0990	
+	799.4910	25300.5220	
+	857.1230	25236.2490	
+	914.6410	25201.5610	
+	972.1870	25260.2140	
+	1029.9840	25421.2890	
+	1088.0720	25516.0460	
+	1146.4790	25700.7720	
+	1205.5560	26103.8990	
+	1265.4700	26434.5030	
+	1326.2580	26869.6440	
+	1387.8710	27158.9730	
+	1450.0950	27404.7790	
+	1512.9660	27726.7960	
+	1576.7790	28230.8850	
+	1641.7600	28750.8010	
+	1707.8510	29204.1950	
+	1774.9550	29638.8860	
+	1843.0800	30099.1600	
+	1912.0550	30385.2970	
+	1981.5780	30579.1950	
+	2051.5050	30739.5510	
+	2121.7800	30884.3730	
+	2192.3220	30973.0820	
+	2263.0890	31082.7220	
+	2334.1510	31230.9380	
+	2405.5170	31349.2780	
+	2477.2180	31525.0560	
+	2549.4010	31772.2110	
+	2622.1870	32053.3570	
+	2695.5020	32236.3070	
+	2769.2700	32451.2920	
+	2843.6140	32740.0360	
+	2918.4840	32913.1170	
+	2993.6860	33031.8160	
+	3069.2450	33225.7140	
+	3145.1350	33321.4370	
+	3221.2580	33430.6720	
+	3297.6630	33568.8170	
+	3374.4610	33775.2140	
+	3451.6640	33923.7680	
+	3529.0700	33953.3080	
+	3606.4810	33927.3870	
+	3683.7990	33872.5790	
+	3760.8220	33669.1720	
+	3836.9090	33051.2390	
+	3909.5770	30670.6690	
+	3971.3150	23467.0920	
+	4013.8130	13799.4280	
+	4038.6240	7957.1150	
+	4052.7680	4445.3280	
+	4060.3080	2166.7320	
+	4064.1900	1237.1690	
+	4066.3720	676.3600	
+	4067.5240	333.9310	
+      Engine Name: Lambda-4S Second Stage
+      Vacuum Isp = 253.2000
+      Maximum Throttle = 1.0000
+      Minimum Throttle = 0.0000
+      Fuel Flow (max) = 0.0000
+      Oxidizer Flow (max) = 0.0000
+      Nozzle Name: Lambda Third Stage Nozzle
+      Nozzle Exit Area = 0.1076
+      X = 157.4803
+      Y = 0.0000
+      Z = 0.0000
+      Pitch = 0.0000 degrees
+      Yaw = 0.0000 degrees
+    1 dimensional table with 3 rows.
+	0.1000	10000.0000	
+	1000.0000	18000.0000	
+	1210.0000	8000.0000	
+      Engine Name: Lambda-4S Third Stage
+      Vacuum Isp = 249.0000
+      Maximum Throttle = 1.0000
+      Minimum Throttle = 0.0000
+      Fuel Flow (max) = 0.0000
+      Oxidizer Flow (max) = 0.0000
+      Nozzle Name: Lambda Main Rocket Nozzle
+      Nozzle Exit Area = 0.1076
+      X = 39.3701
+      Y = 0.0000
+      Z = 0.0000
+      Pitch = 0.0000 degrees
+      Yaw = 0.0000 degrees
+    1 dimensional table with 3 rows.
+	0.1000	10000.0000	
+	1000.0000	18000.0000	
+	1210.0000	8000.0000	
+      Engine Name: Lambda-4S Main Stage
+      Vacuum Isp = 249.0000
+      Maximum Throttle = 1.0000
+      Minimum Throttle = 0.0000
+      Fuel Flow (max) = 0.0000
+      Oxidizer Flow (max) = 0.0000
+
+In file aircraft/lambda/Systems/GuidanceExecutive.xml: line 2
+ Attribute 'name' is overridden in file aircraft/lambda/lambda.xml: line 424
+ The value 'Guidance Executive' will be used instead of 'J246 Guidance Executive'.
+
+  System: Guidance Executive
+
+[1m[34m    Channel [22mMET Clock[0m
+
+    Loading Component "guidance/executive/launch-time" of type: SWITCH
+      Switch default value is: sim-time-sec
+      Switch takes test 1 value (launch-time)
+      if all of the following are true: {
+        throttle-cmd-norm gt 0.0000
+      }
+
+    Loading Component "guidance/executive/MET" of type: SUMMER
+      INPUTS: 
+       simulation/sim-time-sec
+       -guidance/executive/launch-time
+
+[1m[34m    Channel [22mMechanical Timer[0m
+
+    Loading Component "guidance/executive/left-srb-sep-flag" of type: SWITCH
+      Switch default value is: 0.0000
+      Switch takes test 1 value (1.0000)
+      if all of the following are true: {
+        MET gt 8.0000
+      }
+
+    Loading Component "guidance/executive/right-srb-sep-flag" of type: SWITCH
+      Switch default value is: 0.0000
+      Switch takes test 1 value (1.0000)
+      if all of the following are true: {
+        MET gt 8.0000
+      }
+
+    Loading Component "guidance/executive/first-stage-sep-flag" of type: SWITCH
+      Switch default value is: 0.0000
+      Switch takes test 1 value (1.0000)
+      if all of the following are true: {
+        MET gt 32.0000
+      }
+
+    Loading Component "guidance/executive/sec-stage-ig-flag" of type: SWITCH
+      Switch default value is: 0.0000
+      Switch takes test 1 value (1.0000)
+      if all of the following are true: {
+        MET gt 37.0000
+      }
+
+    Loading Component "guidance/executive/sec-stage-sep-flag" of type: SWITCH
+      Switch default value is: 0.0000
+      Switch takes test 1 value (1.0000)
+      if all of the following are true: {
+        MET gt 100.0000
+      }
+
+    Loading Component "guidance/executive/third-stage-ig-flag" of type: SWITCH
+      Switch default value is: 0.0000
+      Switch takes test 1 value (1.0000)
+      if all of the following are true: {
+        MET gt 103.0000
+      }
+
+  Aerodynamics (Lift|Side|Drag axes):
+
+    1 dimensional table with 5 rows.
+	0.0100	0.5000	
+	0.8000	0.5500	
+	1.0000	0.7000	
+	1.5000	0.5000	
+	2.0000	0.4000	
+    Function: aero/force/drag
+    Function: aero/coefficient/Cmalpha
+    Function: aero/coefficient/Cmq
+    Function: aero/coefficient/Cmadot
+    Function: aero/coefficient/Cmb
+    Function: aero/coefficient/Cnr
+
+Script: "Lambda-4S-5"
+  begins at 0.0000 seconds and runs to 180.0083 seconds with dt = 0.001000 (1000.000000 Hz)
+
+Local property: hold-down = 1.000000
+Event 0 (Start Solid Rocket Boosters):
+  When first triggered, executes once  if all of the following are true: {
+    sim-time-sec ge 1.000000
+  }
+  Actions taken:
+    {
+      set fcs/throttle-cmd-norm to 1.000000 (constant via step)
+      set fcs/throttle-cmd-norm[1] to 1.000000 (constant via step)
+      set fcs/throttle-cmd-norm[2] to 1.000000 (constant via step)
+    }
+
+Event 1 (Release):
+  When first triggered, executes once  if all of the following are true: {
+    fbx-prop-lbs gt weight-lbs
+  }
+  Actions taken:
+    {
+      set forces/hold-down to 0.000000 (constant via step)
+    }
+
+Event 2 (First Stage Burnout):
+  When first triggered, executes once  if all of the following are true: {
+    contents-lbs lt 1.000000
+  }
+  Actions taken:
+    {
+    }
+  Notifications:
+    {
+      position/h-sl-meters
+      position/distance-from-start-mag-mt
+    }
+
+Event 3 (Second Stage Burnout):
+  When first triggered, executes once  if all of the following are true: {
+    contents-lbs lt 1.000000
+  }
+  Actions taken:
+    {
+    }
+  Notifications:
+    {
+      position/h-sl-meters
+      position/distance-from-start-mag-mt
+    }
+
+Event 4 (Third Stage Burnout):
+  When first triggered, executes once  if all of the following are true: {
+    contents-lbs lt 1.000000
+  }
+  Actions taken:
+    {
+    }
+  Notifications:
+    {
+      position/h-sl-meters
+      position/distance-from-start-mag-mt
+    }
+
+Event 5 (Drop Boosters):
+  When first triggered, executes once  if any of the following are true: {
+    left-srb-sep-flag eq 1.000000
+    right-srb-sep-flag eq 1.000000
+  }
+  Actions taken:
+    {
+      set inertia/pointmass-weight-lbs[3] to 0.000000 (constant via step)
+      set inertia/pointmass-weight-lbs[4] to 0.000000 (constant via step)
+    }
+  Notifications:
+    {
+      position/h-sl-meters
+      position/distance-from-start-mag-mt
+      inertia/weight-lbs
+    }
+
+Event 6 (First Stage Seperation):
+  When first triggered, executes once  if all of the following are true: {
+    first-stage-sep-flag eq 1.000000
+  }
+  Actions taken:
+    {
+      set inertia/pointmass-weight-lbs[5] to 0.000000 (constant via step)
+    }
+  Notifications:
+    {
+      position/h-sl-meters
+      position/distance-from-start-mag-mt
+      inertia/weight-lbs
+    }
+
+Event 7 (Second Stage Ignition):
+  When first triggered, executes once  if all of the following are true: {
+    sec-stage-ig-flag eq 1.000000
+  }
+  Actions taken:
+    {
+      set fcs/throttle-cmd-norm[3] to 1.000000 (constant via step)
+    }
+  Notifications:
+    {
+      position/h-sl-meters
+      position/distance-from-start-mag-mt
+    }
+
+Event 8 (Second Stage Seperation):
+  When first triggered, executes once  if all of the following are true: {
+    sec-stage-sep-flag eq 1.000000
+  }
+  Actions taken:
+    {
+      set inertia/pointmass-weight-lbs[2] to 0.000000 (constant via step)
+    }
+  Notifications:
+    {
+      position/h-sl-meters
+      position/distance-from-start-mag-mt
+      inertia/weight-lbs
+    }
+
+Event 9 (Third Stage Ignition):
+  When first triggered, executes once  if all of the following are true: {
+    third-stage-ig-flag eq 1.000000
+  }
+  Actions taken:
+    {
+      set fcs/throttle-cmd-norm[4] to 1.000000 (constant via step)
+    }
+  Notifications:
+    {
+      position/h-sl-meters
+      position/distance-from-start-mag-mt
+    }
+
+
+  Output data set: 0  
+    Properties logged:
+      - MET
+      - h-sl-meters
+      - lat-gc-deg
+      - long-gc-deg
+      - fbx-prop-lbs
+      - weight-lbs
+      - theta-deg
+      - ned-velocity-mag-fps
+      - eci-velocity-mag-fps
+      - qbar-psf
+      - udot-ft_sec2
+      - vdot-ft_sec2
+      - wdot-ft_sec2
+      - distance-from-start-mag-mt
+      - alpha-deg
+      - p-rad_sec
+
+[34m[1m  Mass Properties Report (English units: lbf, in, slug-ft^2)[0m
+                                  [4m    Weight    CG-X    CG-Y    CG-Z         Ixx         Iyy         Izz         Ixy         Ixz         Iyz[24m
+[1m    Base Vehicle                  [22m      50.8    21.9     0.0     0.0         0.2         0.3         0.3        -0.0         0.0        -0.0
+[1m0   Nose Faring                   [22m      22.0    19.7     0.0     0.0         1.9         1.6         1.6         0.0         0.0         0.0
+[1m1   3rd Stage                     [22m     603.8    76.4     0.0     0.0        51.3       173.5       173.5         0.0         0.0         0.0
+[1m2   2nd Stage                     [22m    1365.5   236.2     0.0     0.0       246.8       721.3       721.3         0.0         0.0         0.0
+[1m3   Right Booster                 [22m     420.0   527.6     0.0    20.6        13.5       396.8       396.8         0.0         0.0         0.0
+[1m4   Left Booster                  [22m     420.0   527.6     0.0   -20.6        13.5       396.8       396.8         0.0         0.0         0.0
+[1m5   1st Stage                     [22m    2401.7   485.4     0.0     0.0       434.1      4920.3      4920.3         0.0         0.0         0.0
+[1m0   Solid Fuel                    [22m   687.842 527.559       0 20.5709     12.2078     644.992     644.992
+[1m1   Solid Fuel                    [22m   687.842 527.559       0-20.5709     12.2078     644.992     644.992
+[1m2   Solid Fuel                    [22m   8569.37 472.441       0       0     831.725       15706       15706
+[1m3   Solid Fuel                    [22m   4067.53  196.85       0       0     394.786      2011.8      2011.8
+[1m4   Solid Fuel                    [22m   1207.03 78.7402       0       0     59.3641     568.102     568.102
+[1m5   Solid Fuel                    [22m   193.897  19.685       0       0     7.48016     4.98556     4.98556
+    [4m                                                                                                                                        [24m
+[1m    Total:                           20697.4   369.8     0.0     0.0      2281.4    136565.4    136363.0         0.0         0.0         0.0[22m
+
+[34m[1mEnd of vehicle configuration loading.
+-------------------------------------------------------------------------------[0m
+
+Simulation Configuration
+------------------------
+Mass Properties Model: 
+Ground Reactions Model: 
+Aerodynamics Model: 
+Propulsion Model: 
+
+[34m------------------------------------------------------------------[0m
+[1mState Report at sim time: 0.000000 seconds[0m
+  [4mPosition[24m
+    ECI:   -11754823.46888876, 13485018.69063665, 10856383.84853262 (x,y,z, in ft)
+    ECEF:  -11754823.468889 , 13485018.690637 , 10856383.848533 (x,y,z, in ft)
+    Local: 31.423098, 131.078500, -0.000000 (geodetic lat, lon, alt ASL in deg and ft)
+
+  [4mOrientation[24m
+    ECI:   -107.8790215174837, -26.22828216341476, 161.4367153743489 (phi, theta, psi in deg)
+    Local: 1.401154730457219e-14, 63.00000000000001, 93.00000000000003 (phi, theta, psi in deg)
+
+  [4mVelocity[24m
+    ECI:   -983.3430706927185, -857.1752453983577, 0 (x,y,z in ft/s)
+    ECEF:  0, 0, 0 (x,y,z in ft/s)
+    Local: 0.000000 , 0.000000 , 0.000000 (n,e,d in ft/sec)
+    Body:  0.000000 , 0.000000 , -0.000000 (u,v,w in ft/sec)
+
+  [4mBody Rates (relative to given frame, expressed in body frame)[24m
+    ECI:   0.001846494434818284, -0.003566903136134233, -0.001150636247524505 (p,q,r in deg/s)
+    ECEF:  0, 0, 0 (p,q,r in deg/s)
+
+[32m[1m---- JSBSim Execution beginning ... --------------------------------------------[0m
+
+Start: Saturday February 03 2018 17:09:42 (HH:MM:SS)
+
+[4m[1mStart Solid Rocket Boosters[22m[24m (Event 0) executed at time: [1m1.000000[22m
+
+
+[4m[1mRelease[22m[24m (Event 1) executed at time: [1m1.028000[22m
+
+
+[4m[1mDrop Boosters[22m[24m (Event 5) executed at time: [1m9.000000[22m
+    Altitude [m] = 1652.492295
+    Downrange [m] = 1031.582605
+    Total Mass [lbs] = 16060.638030
+
+
+[4m[1mFirst Stage Burnout[22m[24m (Event 2) executed at time: [1m28.981000[22m
+    Altitude [m] = 14933.161514
+    Downrange [m] = 11763.912462
+
+
+[4m[1mFirst Stage Seperation[22m[24m (Event 6) executed at time: [1m33.000000[22m
+    Altitude [m] = 17963.748824
+    Downrange [m] = 14559.763017
+    Total Mass [lbs] = 9912.426748
+
+
+[4m[1mSecond Stage Ignition[22m[24m (Event 7) executed at time: [1m38.000000[22m
+    Altitude [m] = 21463.899511
+    Downrange [m] = 17980.742592
+
+
+[4m[1mSecond Stage Burnout[22m[24m (Event 3) executed at time: [1m76.247000[22m
+    Altitude [m] = 60852.805791
+    Downrange [m] = 68414.974146
+
+
+[4m[1mSecond Stage Seperation[22m[24m (Event 8) executed at time: [1m101.000000[22m
+    Altitude [m] = 95055.060338
+    Downrange [m] = 121079.785999
+    Total Mass [lbs] = 3443.182127
+
+
+[4m[1mThird Stage Ignition[22m[24m (Event 9) executed at time: [1m104.000000[22m
+    Altitude [m] = 98845.559069
+    Downrange [m] = 127420.426824
+
+
+[4m[1mThird Stage Burnout[22m[24m (Event 4) executed at time: [1m126.418000[22m
+    Altitude [m] = 134006.558106
+    Downrange [m] = 191290.573366
+
+End: Saturday February 03 2018 17:09:46 (HH:MM:SS)
