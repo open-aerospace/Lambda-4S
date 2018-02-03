@@ -59,3 +59,5 @@ target/
 .ipynb_checkpoints
 _site
 *.md
+
+JSBSim-1.0

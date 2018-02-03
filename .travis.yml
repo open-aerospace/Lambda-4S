@@ -5,17 +5,16 @@ python:
 env:
   - JEKYLL_ENV=production
 before_install:
-  - rvm use 2.2.3 --install --fuzzy
-  - wget -O jsbsim.tar.gz http://jsbsim.cvs.sourceforge.net/viewvc/jsbsim/?view=tar
-  - tar -xvf jsbsim.tar.gz
+  - rvm use 2.3.3 --install --fuzzy
+  - tar -xvf JSBSim-1.0.rc2.tar.gz
 
 install:
- - cd jsbsim/JSBSim/
+ - cd JSBSim-1.0
  - ./autogen.sh
  - ./configure
  - make
  - export PATH=$PATH:$PWD/src/
- - cd ../..
+ - cd ..
  - gem install --no-document jekyll
  - gem install jekyll-scholar
  - pip install --use-wheel jupyter
